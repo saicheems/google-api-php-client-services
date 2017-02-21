@@ -13,16 +13,16 @@
  * the License.
  */
 
-class Google_Service_Dataproc_DiagnoseClusterOutputLocation extends Google_Model
+class Google_Service_Dataproc_JobScheduling extends Google_Model
 {
-  public $outputUri;
+  public $maxFailuresPerHour;
 
-  public function setOutputUri($outputUri)
+  public function setMaxFailuresPerHour($maxFailuresPerHour)
   {
-    $this->outputUri = $outputUri;
+    $this->maxFailuresPerHour = $maxFailuresPerHour;
   }
-  public function getOutputUri()
+  public function getMaxFailuresPerHour()
   {
-    return $this->outputUri;
+    return $this->maxFailuresPerHour;
   }
 }
