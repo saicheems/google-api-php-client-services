@@ -13,25 +13,25 @@
  * the License.
  */
 
-class Google_Service_ToolResults_StepDimensionValueEntry extends Google_Model
+class Google_Service_ToolResults_MemoryInfo extends Google_Model
 {
-  public $key;
-  public $value;
+  public $memoryCapInKibibyte;
+  public $memoryTotalInKibibyte;
 
-  public function setKey($key)
+  public function setMemoryCapInKibibyte($memoryCapInKibibyte)
   {
-    $this->key = $key;
+    $this->memoryCapInKibibyte = $memoryCapInKibibyte;
   }
-  public function getKey()
+  public function getMemoryCapInKibibyte()
   {
-    return $this->key;
+    return $this->memoryCapInKibibyte;
   }
-  public function setValue($value)
+  public function setMemoryTotalInKibibyte($memoryTotalInKibibyte)
   {
-    $this->value = $value;
+    $this->memoryTotalInKibibyte = $memoryTotalInKibibyte;
   }
-  public function getValue()
+  public function getMemoryTotalInKibibyte()
   {
-    return $this->value;
+    return $this->memoryTotalInKibibyte;
   }
 }

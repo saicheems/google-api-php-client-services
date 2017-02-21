@@ -13,18 +13,19 @@
  * the License.
  */
 
-class Google_Service_ToolResults_StepDimensionValueEntry extends Google_Model
+class Google_Service_ToolResults_PerfSample extends Google_Model
 {
-  public $key;
+  protected $sampleTimeType = 'Google_Service_ToolResults_Timestamp';
+  protected $sampleTimeDataType = '';
   public $value;
 
-  public function setKey($key)
+  public function setSampleTime(Google_Service_ToolResults_Timestamp $sampleTime)
   {
-    $this->key = $key;
+    $this->sampleTime = $sampleTime;
   }
-  public function getKey()
+  public function getSampleTime()
   {
-    return $this->key;
+    return $this->sampleTime;
   }
   public function setValue($value)
   {

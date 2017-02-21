@@ -13,25 +13,18 @@
  * the License.
  */
 
-class Google_Service_ToolResults_StepDimensionValueEntry extends Google_Model
+class Google_Service_ToolResults_BatchCreatePerfSamplesResponse extends Google_Collection
 {
-  public $key;
-  public $value;
+  protected $collection_key = 'perfSamples';
+  protected $perfSamplesType = 'Google_Service_ToolResults_PerfSample';
+  protected $perfSamplesDataType = 'array';
 
-  public function setKey($key)
+  public function setPerfSamples($perfSamples)
   {
-    $this->key = $key;
+    $this->perfSamples = $perfSamples;
   }
-  public function getKey()
+  public function getPerfSamples()
   {
-    return $this->key;
-  }
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
+    return $this->perfSamples;
   }
 }
