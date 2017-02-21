@@ -13,27 +13,26 @@
  * the License.
  */
 
-class Google_Service_Container_ListClustersResponse extends Google_Collection
+class Google_Service_Container_NodeManagement extends Google_Model
 {
-  protected $collection_key = 'missingZones';
-  protected $clustersType = 'Google_Service_Container_Cluster';
-  protected $clustersDataType = 'array';
-  public $missingZones;
+  public $autoUpgrade;
+  protected $upgradeOptionsType = 'Google_Service_Container_AutoUpgradeOptions';
+  protected $upgradeOptionsDataType = '';
 
-  public function setClusters($clusters)
+  public function setAutoUpgrade($autoUpgrade)
   {
-    $this->clusters = $clusters;
+    $this->autoUpgrade = $autoUpgrade;
   }
-  public function getClusters()
+  public function getAutoUpgrade()
   {
-    return $this->clusters;
+    return $this->autoUpgrade;
   }
-  public function setMissingZones($missingZones)
+  public function setUpgradeOptions(Google_Service_Container_AutoUpgradeOptions $upgradeOptions)
   {
-    $this->missingZones = $missingZones;
+    $this->upgradeOptions = $upgradeOptions;
   }
-  public function getMissingZones()
+  public function getUpgradeOptions()
   {
-    return $this->missingZones;
+    return $this->upgradeOptions;
   }
 }

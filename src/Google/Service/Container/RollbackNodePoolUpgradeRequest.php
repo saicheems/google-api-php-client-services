@@ -13,17 +13,6 @@
  * the License.
  */
 
-class Google_Service_Container_CreateClusterRequest extends Google_Model
+class Google_Service_Container_RollbackNodePoolUpgradeRequest extends Google_Model
 {
-  protected $clusterType = 'Google_Service_Container_Cluster';
-  protected $clusterDataType = '';
-
-  public function setCluster(Google_Service_Container_Cluster $cluster)
-  {
-    $this->cluster = $cluster;
-  }
-  public function getCluster()
-  {
-    return $this->cluster;
-  }
 }

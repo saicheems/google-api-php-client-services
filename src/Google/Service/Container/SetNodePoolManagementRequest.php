@@ -13,17 +13,17 @@
  * the License.
  */
 
-class Google_Service_Container_CreateClusterRequest extends Google_Model
+class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
 {
-  protected $clusterType = 'Google_Service_Container_Cluster';
-  protected $clusterDataType = '';
+  protected $managementType = 'Google_Service_Container_NodeManagement';
+  protected $managementDataType = '';
 
-  public function setCluster(Google_Service_Container_Cluster $cluster)
+  public function setManagement(Google_Service_Container_NodeManagement $management)
   {
-    $this->cluster = $cluster;
+    $this->management = $management;
   }
-  public function getCluster()
+  public function getManagement()
   {
-    return $this->cluster;
+    return $this->management;
   }
 }

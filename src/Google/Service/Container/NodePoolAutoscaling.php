@@ -13,27 +13,34 @@
  * the License.
  */
 
-class Google_Service_Container_ListClustersResponse extends Google_Collection
+class Google_Service_Container_NodePoolAutoscaling extends Google_Model
 {
-  protected $collection_key = 'missingZones';
-  protected $clustersType = 'Google_Service_Container_Cluster';
-  protected $clustersDataType = 'array';
-  public $missingZones;
+  public $enabled;
+  public $maxNodeCount;
+  public $minNodeCount;
 
-  public function setClusters($clusters)
+  public function setEnabled($enabled)
   {
-    $this->clusters = $clusters;
+    $this->enabled = $enabled;
   }
-  public function getClusters()
+  public function getEnabled()
   {
-    return $this->clusters;
+    return $this->enabled;
   }
-  public function setMissingZones($missingZones)
+  public function setMaxNodeCount($maxNodeCount)
   {
-    $this->missingZones = $missingZones;
+    $this->maxNodeCount = $maxNodeCount;
   }
-  public function getMissingZones()
+  public function getMaxNodeCount()
   {
-    return $this->missingZones;
+    return $this->maxNodeCount;
+  }
+  public function setMinNodeCount($minNodeCount)
+  {
+    $this->minNodeCount = $minNodeCount;
+  }
+  public function getMinNodeCount()
+  {
+    return $this->minNodeCount;
   }
 }

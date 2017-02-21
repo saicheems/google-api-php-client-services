@@ -13,17 +13,25 @@
  * the License.
  */
 
-class Google_Service_Container_CreateClusterRequest extends Google_Model
+class Google_Service_Container_AutoUpgradeOptions extends Google_Model
 {
-  protected $clusterType = 'Google_Service_Container_Cluster';
-  protected $clusterDataType = '';
+  public $autoUpgradeStartTime;
+  public $description;
 
-  public function setCluster(Google_Service_Container_Cluster $cluster)
+  public function setAutoUpgradeStartTime($autoUpgradeStartTime)
   {
-    $this->cluster = $cluster;
+    $this->autoUpgradeStartTime = $autoUpgradeStartTime;
   }
-  public function getCluster()
+  public function getAutoUpgradeStartTime()
   {
-    return $this->cluster;
+    return $this->autoUpgradeStartTime;
+  }
+  public function setDescription($description)
+  {
+    $this->description = $description;
+  }
+  public function getDescription()
+  {
+    return $this->description;
   }
 }
