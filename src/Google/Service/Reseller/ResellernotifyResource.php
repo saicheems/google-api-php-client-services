@@ -13,25 +13,16 @@
  * the License.
  */
 
-class Google_Service_Reseller_RenewalSettings extends Google_Model
+class Google_Service_Reseller_ResellernotifyResource extends Google_Model
 {
-  public $kind;
-  public $renewalType;
+  public $topicName;
 
-  public function setKind($kind)
+  public function setTopicName($topicName)
   {
-    $this->kind = $kind;
+    $this->topicName = $topicName;
   }
-  public function getKind()
+  public function getTopicName()
   {
-    return $this->kind;
-  }
-  public function setRenewalType($renewalType)
-  {
-    $this->renewalType = $renewalType;
-  }
-  public function getRenewalType()
-  {
-    return $this->renewalType;
+    return $this->topicName;
   }
 }
