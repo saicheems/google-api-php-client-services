@@ -13,34 +13,16 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_Diagnostic extends Google_Model
+class Google_Service_ServiceManagement_AuthorizationConfig extends Google_Model
 {
-  public $kind;
-  public $location;
-  public $message;
+  public $provider;
 
-  public function setKind($kind)
+  public function setProvider($provider)
   {
-    $this->kind = $kind;
+    $this->provider = $provider;
   }
-  public function getKind()
+  public function getProvider()
   {
-    return $this->kind;
-  }
-  public function setLocation($location)
-  {
-    $this->location = $location;
-  }
-  public function getLocation()
-  {
-    return $this->location;
-  }
-  public function setMessage($message)
-  {
-    $this->message = $message;
-  }
-  public function getMessage()
-  {
-    return $this->message;
+    return $this->provider;
   }
 }
