@@ -13,26 +13,18 @@
  * the License.
  */
 
-class Google_Service_Gmail_ModifyThreadRequest extends Google_Collection
+class Google_Service_Gmail_ListSmimeInfoResponse extends Google_Collection
 {
-  protected $collection_key = 'removeLabelIds';
-  public $addLabelIds;
-  public $removeLabelIds;
+  protected $collection_key = 'smimeInfo';
+  protected $smimeInfoType = 'Google_Service_Gmail_SmimeInfo';
+  protected $smimeInfoDataType = 'array';
 
-  public function setAddLabelIds($addLabelIds)
+  public function setSmimeInfo($smimeInfo)
   {
-    $this->addLabelIds = $addLabelIds;
+    $this->smimeInfo = $smimeInfo;
   }
-  public function getAddLabelIds()
+  public function getSmimeInfo()
   {
-    return $this->addLabelIds;
-  }
-  public function setRemoveLabelIds($removeLabelIds)
-  {
-    $this->removeLabelIds = $removeLabelIds;
-  }
-  public function getRemoveLabelIds()
-  {
-    return $this->removeLabelIds;
+    return $this->smimeInfo;
   }
 }
