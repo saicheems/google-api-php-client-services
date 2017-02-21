@@ -13,7 +13,7 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearning_GoogleCloudMlV1beta1OperationMetadata extends Google_Model
+class Google_Service_CloudMachineLearning_GoogleCloudMlV1OperationMetadata extends Google_Model
 {
   public $createTime;
   public $endTime;
@@ -21,7 +21,7 @@ class Google_Service_CloudMachineLearning_GoogleCloudMlV1beta1OperationMetadata 
   public $modelName;
   public $operationType;
   public $startTime;
-  protected $versionType = 'Google_Service_CloudMachineLearning_GoogleCloudMlV1beta1Version';
+  protected $versionType = 'Google_Service_CloudMachineLearning_GoogleCloudMlV1Version';
   protected $versionDataType = '';
 
   public function setCreateTime($createTime)
@@ -72,7 +72,7 @@ class Google_Service_CloudMachineLearning_GoogleCloudMlV1beta1OperationMetadata 
   {
     return $this->startTime;
   }
-  public function setVersion(Google_Service_CloudMachineLearning_GoogleCloudMlV1beta1Version $version)
+  public function setVersion(Google_Service_CloudMachineLearning_GoogleCloudMlV1Version $version)
   {
     $this->version = $version;
   }

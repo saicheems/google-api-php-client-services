@@ -13,7 +13,7 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearning_GoogleCloudMlV1beta1Version extends Google_Model
+class Google_Service_CloudMachineLearning_GoogleCloudMlV1Version extends Google_Model
 {
   public $createTime;
   public $deploymentUri;
