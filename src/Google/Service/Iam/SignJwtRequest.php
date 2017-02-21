@@ -13,25 +13,16 @@
  * the License.
  */
 
-class Google_Service_Iam_CreateServiceAccountKeyRequest extends Google_Model
+class Google_Service_Iam_SignJwtRequest extends Google_Model
 {
-  public $keyAlgorithm;
-  public $privateKeyType;
+  public $payload;
 
-  public function setKeyAlgorithm($keyAlgorithm)
+  public function setPayload($payload)
   {
-    $this->keyAlgorithm = $keyAlgorithm;
+    $this->payload = $payload;
   }
-  public function getKeyAlgorithm()
+  public function getPayload()
   {
-    return $this->keyAlgorithm;
-  }
-  public function setPrivateKeyType($privateKeyType)
-  {
-    $this->privateKeyType = $privateKeyType;
-  }
-  public function getPrivateKeyType()
-  {
-    return $this->privateKeyType;
+    return $this->payload;
   }
 }
