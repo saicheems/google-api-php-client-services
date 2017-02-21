@@ -13,25 +13,12 @@
  * the License.
  */
 
-class Google_Service_Sheets_UpdateCellsRequest extends Google_Collection
+class Google_Service_Sheets_DeleteRangeRequest extends Google_Model
 {
-  protected $collection_key = 'rows';
-  public $fields;
   protected $rangeType = 'Google_Service_Sheets_GridRange';
   protected $rangeDataType = '';
-  protected $rowsType = 'Google_Service_Sheets_RowData';
-  protected $rowsDataType = 'array';
-  protected $startType = 'Google_Service_Sheets_GridCoordinate';
-  protected $startDataType = '';
+  public $shiftDimension;
 
-  public function setFields($fields)
-  {
-    $this->fields = $fields;
-  }
-  public function getFields()
-  {
-    return $this->fields;
-  }
   public function setRange(Google_Service_Sheets_GridRange $range)
   {
     $this->range = $range;
@@ -40,20 +27,12 @@ class Google_Service_Sheets_UpdateCellsRequest extends Google_Collection
   {
     return $this->range;
   }
-  public function setRows($rows)
+  public function setShiftDimension($shiftDimension)
   {
-    $this->rows = $rows;
+    $this->shiftDimension = $shiftDimension;
   }
-  public function getRows()
+  public function getShiftDimension()
   {
-    return $this->rows;
-  }
-  public function setStart(Google_Service_Sheets_GridCoordinate $start)
-  {
-    $this->start = $start;
-  }
-  public function getStart()
-  {
-    return $this->start;
+    return $this->shiftDimension;
   }
 }

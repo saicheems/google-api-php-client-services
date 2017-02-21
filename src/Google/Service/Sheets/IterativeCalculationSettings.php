@@ -13,26 +13,25 @@
  * the License.
  */
 
-class Google_Service_Sheets_PivotGroupValueMetadata extends Google_Model
+class Google_Service_Sheets_IterativeCalculationSettings extends Google_Model
 {
-  public $collapsed;
-  protected $valueType = 'Google_Service_Sheets_ExtendedValue';
-  protected $valueDataType = '';
+  public $convergenceThreshold;
+  public $maxIterations;
 
-  public function setCollapsed($collapsed)
+  public function setConvergenceThreshold($convergenceThreshold)
   {
-    $this->collapsed = $collapsed;
+    $this->convergenceThreshold = $convergenceThreshold;
   }
-  public function getCollapsed()
+  public function getConvergenceThreshold()
   {
-    return $this->collapsed;
+    return $this->convergenceThreshold;
   }
-  public function setValue(Google_Service_Sheets_ExtendedValue $value)
+  public function setMaxIterations($maxIterations)
   {
-    $this->value = $value;
+    $this->maxIterations = $maxIterations;
   }
-  public function getValue()
+  public function getMaxIterations()
   {
-    return $this->value;
+    return $this->maxIterations;
   }
 }
