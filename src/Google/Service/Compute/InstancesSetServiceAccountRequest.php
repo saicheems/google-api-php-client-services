@@ -13,25 +13,26 @@
  * the License.
  */
 
-class Google_Service_Compute_VpnTunnelsScopedListWarningData extends Google_Model
+class Google_Service_Compute_InstancesSetServiceAccountRequest extends Google_Collection
 {
-  public $key;
-  public $value;
+  protected $collection_key = 'scopes';
+  public $email;
+  public $scopes;
 
-  public function setKey($key)
+  public function setEmail($email)
   {
-    $this->key = $key;
+    $this->email = $email;
   }
-  public function getKey()
+  public function getEmail()
   {
-    return $this->key;
+    return $this->email;
   }
-  public function setValue($value)
+  public function setScopes($scopes)
   {
-    $this->value = $value;
+    $this->scopes = $scopes;
   }
-  public function getValue()
+  public function getScopes()
   {
-    return $this->value;
+    return $this->scopes;
   }
 }
