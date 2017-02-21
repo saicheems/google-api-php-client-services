@@ -13,20 +13,28 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_ReportRequest extends Google_Collection
+class Google_Service_ServiceControl_AllocateQuotaRequest extends Google_Model
 {
-  protected $collection_key = 'operations';
-  protected $operationsType = 'Google_Service_ServiceControl_Operation';
-  protected $operationsDataType = 'array';
+  protected $allocateOperationType = 'Google_Service_ServiceControl_QuotaOperation';
+  protected $allocateOperationDataType = '';
+  public $allocationMode;
   public $serviceConfigId;
 
-  public function setOperations($operations)
+  public function setAllocateOperation(Google_Service_ServiceControl_QuotaOperation $allocateOperation)
   {
-    $this->operations = $operations;
+    $this->allocateOperation = $allocateOperation;
   }
-  public function getOperations()
+  public function getAllocateOperation()
   {
-    return $this->operations;
+    return $this->allocateOperation;
+  }
+  public function setAllocationMode($allocationMode)
+  {
+    $this->allocationMode = $allocationMode;
+  }
+  public function getAllocationMode()
+  {
+    return $this->allocationMode;
   }
   public function setServiceConfigId($serviceConfigId)
   {

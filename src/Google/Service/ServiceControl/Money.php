@@ -13,27 +13,34 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_MetricValueSet extends Google_Collection
+class Google_Service_ServiceControl_Money extends Google_Model
 {
-  protected $collection_key = 'metricValues';
-  public $metricName;
-  protected $metricValuesType = 'Google_Service_ServiceControl_MetricValue';
-  protected $metricValuesDataType = 'array';
+  public $currencyCode;
+  public $nanos;
+  public $units;
 
-  public function setMetricName($metricName)
+  public function setCurrencyCode($currencyCode)
   {
-    $this->metricName = $metricName;
+    $this->currencyCode = $currencyCode;
   }
-  public function getMetricName()
+  public function getCurrencyCode()
   {
-    return $this->metricName;
+    return $this->currencyCode;
   }
-  public function setMetricValues($metricValues)
+  public function setNanos($nanos)
   {
-    $this->metricValues = $metricValues;
+    $this->nanos = $nanos;
   }
-  public function getMetricValues()
+  public function getNanos()
   {
-    return $this->metricValues;
+    return $this->nanos;
+  }
+  public function setUnits($units)
+  {
+    $this->units = $units;
+  }
+  public function getUnits()
+  {
+    return $this->units;
   }
 }

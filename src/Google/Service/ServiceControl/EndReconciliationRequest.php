@@ -13,20 +13,19 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_ReportRequest extends Google_Collection
+class Google_Service_ServiceControl_EndReconciliationRequest extends Google_Model
 {
-  protected $collection_key = 'operations';
-  protected $operationsType = 'Google_Service_ServiceControl_Operation';
-  protected $operationsDataType = 'array';
+  protected $reconciliationOperationType = 'Google_Service_ServiceControl_QuotaOperation';
+  protected $reconciliationOperationDataType = '';
   public $serviceConfigId;
 
-  public function setOperations($operations)
+  public function setReconciliationOperation(Google_Service_ServiceControl_QuotaOperation $reconciliationOperation)
   {
-    $this->operations = $operations;
+    $this->reconciliationOperation = $reconciliationOperation;
   }
-  public function getOperations()
+  public function getReconciliationOperation()
   {
-    return $this->operations;
+    return $this->reconciliationOperation;
   }
   public function setServiceConfigId($serviceConfigId)
   {

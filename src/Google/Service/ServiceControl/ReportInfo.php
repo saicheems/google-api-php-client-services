@@ -13,27 +13,26 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_MetricValueSet extends Google_Collection
+class Google_Service_ServiceControl_ReportInfo extends Google_Model
 {
-  protected $collection_key = 'metricValues';
-  public $metricName;
-  protected $metricValuesType = 'Google_Service_ServiceControl_MetricValue';
-  protected $metricValuesDataType = 'array';
+  public $operationId;
+  protected $quotaInfoType = 'Google_Service_ServiceControl_QuotaInfo';
+  protected $quotaInfoDataType = '';
 
-  public function setMetricName($metricName)
+  public function setOperationId($operationId)
   {
-    $this->metricName = $metricName;
+    $this->operationId = $operationId;
   }
-  public function getMetricName()
+  public function getOperationId()
   {
-    return $this->metricName;
+    return $this->operationId;
   }
-  public function setMetricValues($metricValues)
+  public function setQuotaInfo(Google_Service_ServiceControl_QuotaInfo $quotaInfo)
   {
-    $this->metricValues = $metricValues;
+    $this->quotaInfo = $quotaInfo;
   }
-  public function getMetricValues()
+  public function getQuotaInfo()
   {
-    return $this->metricValues;
+    return $this->quotaInfo;
   }
 }

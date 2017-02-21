@@ -13,27 +13,34 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_MetricValueSet extends Google_Collection
+class Google_Service_ServiceControl_AuthorizationInfo extends Google_Model
 {
-  protected $collection_key = 'metricValues';
-  public $metricName;
-  protected $metricValuesType = 'Google_Service_ServiceControl_MetricValue';
-  protected $metricValuesDataType = 'array';
+  public $granted;
+  public $permission;
+  public $resource;
 
-  public function setMetricName($metricName)
+  public function setGranted($granted)
   {
-    $this->metricName = $metricName;
+    $this->granted = $granted;
   }
-  public function getMetricName()
+  public function getGranted()
   {
-    return $this->metricName;
+    return $this->granted;
   }
-  public function setMetricValues($metricValues)
+  public function setPermission($permission)
   {
-    $this->metricValues = $metricValues;
+    $this->permission = $permission;
   }
-  public function getMetricValues()
+  public function getPermission()
   {
-    return $this->metricValues;
+    return $this->permission;
+  }
+  public function setResource($resource)
+  {
+    $this->resource = $resource;
+  }
+  public function getResource()
+  {
+    return $this->resource;
   }
 }

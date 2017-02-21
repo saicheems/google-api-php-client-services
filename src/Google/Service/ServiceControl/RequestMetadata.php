@@ -13,27 +13,25 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_MetricValueSet extends Google_Collection
+class Google_Service_ServiceControl_RequestMetadata extends Google_Model
 {
-  protected $collection_key = 'metricValues';
-  public $metricName;
-  protected $metricValuesType = 'Google_Service_ServiceControl_MetricValue';
-  protected $metricValuesDataType = 'array';
+  public $callerIp;
+  public $callerSuppliedUserAgent;
 
-  public function setMetricName($metricName)
+  public function setCallerIp($callerIp)
   {
-    $this->metricName = $metricName;
+    $this->callerIp = $callerIp;
   }
-  public function getMetricName()
+  public function getCallerIp()
   {
-    return $this->metricName;
+    return $this->callerIp;
   }
-  public function setMetricValues($metricValues)
+  public function setCallerSuppliedUserAgent($callerSuppliedUserAgent)
   {
-    $this->metricValues = $metricValues;
+    $this->callerSuppliedUserAgent = $callerSuppliedUserAgent;
   }
-  public function getMetricValues()
+  public function getCallerSuppliedUserAgent()
   {
-    return $this->metricValues;
+    return $this->callerSuppliedUserAgent;
   }
 }

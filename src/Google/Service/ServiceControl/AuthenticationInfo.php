@@ -13,27 +13,25 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_MetricValueSet extends Google_Collection
+class Google_Service_ServiceControl_AuthenticationInfo extends Google_Model
 {
-  protected $collection_key = 'metricValues';
-  public $metricName;
-  protected $metricValuesType = 'Google_Service_ServiceControl_MetricValue';
-  protected $metricValuesDataType = 'array';
+  public $authoritySelector;
+  public $principalEmail;
 
-  public function setMetricName($metricName)
+  public function setAuthoritySelector($authoritySelector)
   {
-    $this->metricName = $metricName;
+    $this->authoritySelector = $authoritySelector;
   }
-  public function getMetricName()
+  public function getAuthoritySelector()
   {
-    return $this->metricName;
+    return $this->authoritySelector;
   }
-  public function setMetricValues($metricValues)
+  public function setPrincipalEmail($principalEmail)
   {
-    $this->metricValues = $metricValues;
+    $this->principalEmail = $principalEmail;
   }
-  public function getMetricValues()
+  public function getPrincipalEmail()
   {
-    return $this->metricValues;
+    return $this->principalEmail;
   }
 }

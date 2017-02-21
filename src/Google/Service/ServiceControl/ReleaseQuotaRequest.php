@@ -13,20 +13,19 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_ReportRequest extends Google_Collection
+class Google_Service_ServiceControl_ReleaseQuotaRequest extends Google_Model
 {
-  protected $collection_key = 'operations';
-  protected $operationsType = 'Google_Service_ServiceControl_Operation';
-  protected $operationsDataType = 'array';
+  protected $releaseOperationType = 'Google_Service_ServiceControl_QuotaOperation';
+  protected $releaseOperationDataType = '';
   public $serviceConfigId;
 
-  public function setOperations($operations)
+  public function setReleaseOperation(Google_Service_ServiceControl_QuotaOperation $releaseOperation)
   {
-    $this->operations = $operations;
+    $this->releaseOperation = $releaseOperation;
   }
-  public function getOperations()
+  public function getReleaseOperation()
   {
-    return $this->operations;
+    return $this->releaseOperation;
   }
   public function setServiceConfigId($serviceConfigId)
   {

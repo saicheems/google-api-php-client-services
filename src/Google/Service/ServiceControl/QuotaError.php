@@ -13,27 +13,34 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_MetricValueSet extends Google_Collection
+class Google_Service_ServiceControl_QuotaError extends Google_Model
 {
-  protected $collection_key = 'metricValues';
-  public $metricName;
-  protected $metricValuesType = 'Google_Service_ServiceControl_MetricValue';
-  protected $metricValuesDataType = 'array';
+  public $code;
+  public $description;
+  public $subject;
 
-  public function setMetricName($metricName)
+  public function setCode($code)
   {
-    $this->metricName = $metricName;
+    $this->code = $code;
   }
-  public function getMetricName()
+  public function getCode()
   {
-    return $this->metricName;
+    return $this->code;
   }
-  public function setMetricValues($metricValues)
+  public function setDescription($description)
   {
-    $this->metricValues = $metricValues;
+    $this->description = $description;
   }
-  public function getMetricValues()
+  public function getDescription()
   {
-    return $this->metricValues;
+    return $this->description;
+  }
+  public function setSubject($subject)
+  {
+    $this->subject = $subject;
+  }
+  public function getSubject()
+  {
+    return $this->subject;
   }
 }

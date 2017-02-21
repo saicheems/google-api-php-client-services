@@ -13,34 +13,17 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_LinearBuckets extends Google_Model
+class Google_Service_ServiceControl_CheckInfo extends Google_Collection
 {
-  public $numFiniteBuckets;
-  public $offset;
-  public $width;
+  protected $collection_key = 'unusedArguments';
+  public $unusedArguments;
 
-  public function setNumFiniteBuckets($numFiniteBuckets)
+  public function setUnusedArguments($unusedArguments)
   {
-    $this->numFiniteBuckets = $numFiniteBuckets;
+    $this->unusedArguments = $unusedArguments;
   }
-  public function getNumFiniteBuckets()
+  public function getUnusedArguments()
   {
-    return $this->numFiniteBuckets;
-  }
-  public function setOffset($offset)
-  {
-    $this->offset = $offset;
-  }
-  public function getOffset()
-  {
-    return $this->offset;
-  }
-  public function setWidth($width)
-  {
-    $this->width = $width;
-  }
-  public function getWidth()
-  {
-    return $this->width;
+    return $this->unusedArguments;
   }
 }
