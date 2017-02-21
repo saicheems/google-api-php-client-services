@@ -13,13 +13,22 @@
  * the License.
  */
 
-class Google_Service_Slides_ReplaceAllShapesWithImageRequest extends Google_Model
+class Google_Service_Slides_ReplaceAllShapesWithSheetsChartRequest extends Google_Model
 {
+  public $chartId;
   protected $containsTextType = 'Google_Service_Slides_SubstringMatchCriteria';
   protected $containsTextDataType = '';
-  public $imageUrl;
-  public $replaceMethod;
+  public $linkingMode;
+  public $spreadsheetId;
 
+  public function setChartId($chartId)
+  {
+    $this->chartId = $chartId;
+  }
+  public function getChartId()
+  {
+    return $this->chartId;
+  }
   public function setContainsText(Google_Service_Slides_SubstringMatchCriteria $containsText)
   {
     $this->containsText = $containsText;
@@ -28,20 +37,20 @@ class Google_Service_Slides_ReplaceAllShapesWithImageRequest extends Google_Mode
   {
     return $this->containsText;
   }
-  public function setImageUrl($imageUrl)
+  public function setLinkingMode($linkingMode)
   {
-    $this->imageUrl = $imageUrl;
+    $this->linkingMode = $linkingMode;
   }
-  public function getImageUrl()
+  public function getLinkingMode()
   {
-    return $this->imageUrl;
+    return $this->linkingMode;
   }
-  public function setReplaceMethod($replaceMethod)
+  public function setSpreadsheetId($spreadsheetId)
   {
-    $this->replaceMethod = $replaceMethod;
+    $this->spreadsheetId = $spreadsheetId;
   }
-  public function getReplaceMethod()
+  public function getSpreadsheetId()
   {
-    return $this->replaceMethod;
+    return $this->spreadsheetId;
   }
 }

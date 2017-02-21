@@ -13,26 +13,16 @@
  * the License.
  */
 
-class Google_Service_Slides_TableCellBackgroundFill extends Google_Model
+class Google_Service_Slides_NotesProperties extends Google_Model
 {
-  public $propertyState;
-  protected $solidFillType = 'Google_Service_Slides_SolidFill';
-  protected $solidFillDataType = '';
+  public $speakerNotesObjectId;
 
-  public function setPropertyState($propertyState)
+  public function setSpeakerNotesObjectId($speakerNotesObjectId)
   {
-    $this->propertyState = $propertyState;
+    $this->speakerNotesObjectId = $speakerNotesObjectId;
   }
-  public function getPropertyState()
+  public function getSpeakerNotesObjectId()
   {
-    return $this->propertyState;
-  }
-  public function setSolidFill(Google_Service_Slides_SolidFill $solidFill)
-  {
-    $this->solidFill = $solidFill;
-  }
-  public function getSolidFill()
-  {
-    return $this->solidFill;
+    return $this->speakerNotesObjectId;
   }
 }

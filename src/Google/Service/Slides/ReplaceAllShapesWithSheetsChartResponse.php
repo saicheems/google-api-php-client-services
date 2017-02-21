@@ -13,26 +13,16 @@
  * the License.
  */
 
-class Google_Service_Slides_TableCellBackgroundFill extends Google_Model
+class Google_Service_Slides_ReplaceAllShapesWithSheetsChartResponse extends Google_Model
 {
-  public $propertyState;
-  protected $solidFillType = 'Google_Service_Slides_SolidFill';
-  protected $solidFillDataType = '';
+  public $occurrencesChanged;
 
-  public function setPropertyState($propertyState)
+  public function setOccurrencesChanged($occurrencesChanged)
   {
-    $this->propertyState = $propertyState;
+    $this->occurrencesChanged = $occurrencesChanged;
   }
-  public function getPropertyState()
+  public function getOccurrencesChanged()
   {
-    return $this->propertyState;
-  }
-  public function setSolidFill(Google_Service_Slides_SolidFill $solidFill)
-  {
-    $this->solidFill = $solidFill;
-  }
-  public function getSolidFill()
-  {
-    return $this->solidFill;
+    return $this->occurrencesChanged;
   }
 }

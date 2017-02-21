@@ -13,23 +13,17 @@
  * the License.
  */
 
-class Google_Service_Slides_CreateParagraphBulletsRequest extends Google_Model
+class Google_Service_Slides_UpdateParagraphStyleRequest extends Google_Model
 {
-  public $bulletPreset;
   protected $cellLocationType = 'Google_Service_Slides_TableCellLocation';
   protected $cellLocationDataType = '';
+  public $fields;
   public $objectId;
+  protected $styleType = 'Google_Service_Slides_ParagraphStyle';
+  protected $styleDataType = '';
   protected $textRangeType = 'Google_Service_Slides_Range';
   protected $textRangeDataType = '';
 
-  public function setBulletPreset($bulletPreset)
-  {
-    $this->bulletPreset = $bulletPreset;
-  }
-  public function getBulletPreset()
-  {
-    return $this->bulletPreset;
-  }
   public function setCellLocation(Google_Service_Slides_TableCellLocation $cellLocation)
   {
     $this->cellLocation = $cellLocation;
@@ -38,6 +32,14 @@ class Google_Service_Slides_CreateParagraphBulletsRequest extends Google_Model
   {
     return $this->cellLocation;
   }
+  public function setFields($fields)
+  {
+    $this->fields = $fields;
+  }
+  public function getFields()
+  {
+    return $this->fields;
+  }
   public function setObjectId($objectId)
   {
     $this->objectId = $objectId;
@@ -45,6 +47,14 @@ class Google_Service_Slides_CreateParagraphBulletsRequest extends Google_Model
   public function getObjectId()
   {
     return $this->objectId;
+  }
+  public function setStyle(Google_Service_Slides_ParagraphStyle $style)
+  {
+    $this->style = $style;
+  }
+  public function getStyle()
+  {
+    return $this->style;
   }
   public function setTextRange(Google_Service_Slides_Range $textRange)
   {

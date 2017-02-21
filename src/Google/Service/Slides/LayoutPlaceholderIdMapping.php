@@ -13,29 +13,28 @@
  * the License.
  */
 
-class Google_Service_Slides_CreateVideoRequest extends Google_Model
+class Google_Service_Slides_LayoutPlaceholderIdMapping extends Google_Model
 {
-  protected $elementPropertiesType = 'Google_Service_Slides_PageElementProperties';
-  protected $elementPropertiesDataType = '';
-  public $id;
+  protected $layoutPlaceholderType = 'Google_Service_Slides_Placeholder';
+  protected $layoutPlaceholderDataType = '';
+  public $layoutPlaceholderObjectId;
   public $objectId;
-  public $source;
 
-  public function setElementProperties(Google_Service_Slides_PageElementProperties $elementProperties)
+  public function setLayoutPlaceholder(Google_Service_Slides_Placeholder $layoutPlaceholder)
   {
-    $this->elementProperties = $elementProperties;
+    $this->layoutPlaceholder = $layoutPlaceholder;
   }
-  public function getElementProperties()
+  public function getLayoutPlaceholder()
   {
-    return $this->elementProperties;
+    return $this->layoutPlaceholder;
   }
-  public function setId($id)
+  public function setLayoutPlaceholderObjectId($layoutPlaceholderObjectId)
   {
-    $this->id = $id;
+    $this->layoutPlaceholderObjectId = $layoutPlaceholderObjectId;
   }
-  public function getId()
+  public function getLayoutPlaceholderObjectId()
   {
-    return $this->id;
+    return $this->layoutPlaceholderObjectId;
   }
   public function setObjectId($objectId)
   {
@@ -44,13 +43,5 @@ class Google_Service_Slides_CreateVideoRequest extends Google_Model
   public function getObjectId()
   {
     return $this->objectId;
-  }
-  public function setSource($source)
-  {
-    $this->source = $source;
-  }
-  public function getSource()
-  {
-    return $this->source;
   }
 }

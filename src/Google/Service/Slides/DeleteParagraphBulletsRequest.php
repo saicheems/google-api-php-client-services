@@ -13,23 +13,14 @@
  * the License.
  */
 
-class Google_Service_Slides_CreateParagraphBulletsRequest extends Google_Model
+class Google_Service_Slides_DeleteParagraphBulletsRequest extends Google_Model
 {
-  public $bulletPreset;
   protected $cellLocationType = 'Google_Service_Slides_TableCellLocation';
   protected $cellLocationDataType = '';
   public $objectId;
   protected $textRangeType = 'Google_Service_Slides_Range';
   protected $textRangeDataType = '';
 
-  public function setBulletPreset($bulletPreset)
-  {
-    $this->bulletPreset = $bulletPreset;
-  }
-  public function getBulletPreset()
-  {
-    return $this->bulletPreset;
-  }
   public function setCellLocation(Google_Service_Slides_TableCellLocation $cellLocation)
   {
     $this->cellLocation = $cellLocation;
