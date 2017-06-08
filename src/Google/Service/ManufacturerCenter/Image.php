@@ -15,45 +15,27 @@
  * the License.
  */
 
-class Google_Service_ManufacturerCenter_Issue extends Google_Model
+class Google_Service_ManufacturerCenter_Image extends Google_Model
 {
-  public $attribute;
-  public $description;
-  public $severity;
-  public $timestamp;
+  public $imageUrl;
+  public $status;
   public $type;
 
-  public function setAttribute($attribute)
+  public function setImageUrl($imageUrl)
   {
-    $this->attribute = $attribute;
+    $this->imageUrl = $imageUrl;
   }
-  public function getAttribute()
+  public function getImageUrl()
   {
-    return $this->attribute;
+    return $this->imageUrl;
   }
-  public function setDescription($description)
+  public function setStatus($status)
   {
-    $this->description = $description;
+    $this->status = $status;
   }
-  public function getDescription()
+  public function getStatus()
   {
-    return $this->description;
-  }
-  public function setSeverity($severity)
-  {
-    $this->severity = $severity;
-  }
-  public function getSeverity()
-  {
-    return $this->severity;
-  }
-  public function setTimestamp($timestamp)
-  {
-    $this->timestamp = $timestamp;
-  }
-  public function getTimestamp()
-  {
-    return $this->timestamp;
+    return $this->status;
   }
   public function setType($type)
   {
