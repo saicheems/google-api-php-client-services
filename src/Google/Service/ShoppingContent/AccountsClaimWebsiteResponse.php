@@ -15,25 +15,16 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_AccountShippingPostalCodeRange extends Google_Model
+class Google_Service_ShoppingContent_AccountsClaimWebsiteResponse extends Google_Model
 {
-  public $end;
-  public $start;
+  public $kind;
 
-  public function setEnd($end)
+  public function setKind($kind)
   {
-    $this->end = $end;
+    $this->kind = $kind;
   }
-  public function getEnd()
+  public function getKind()
   {
-    return $this->end;
-  }
-  public function setStart($start)
-  {
-    $this->start = $start;
-  }
-  public function getStart()
-  {
-    return $this->start;
+    return $this->kind;
   }
 }
