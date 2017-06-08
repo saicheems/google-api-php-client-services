@@ -15,36 +15,18 @@
  * the License.
  */
 
-class Google_Service_ServiceUser_BackendRule extends Google_Model
+class Google_Service_ServiceUser_MetricRule extends Google_Model
 {
-  public $address;
-  public $deadline;
-  public $minDeadline;
+  public $metricCosts;
   public $selector;
 
-  public function setAddress($address)
+  public function setMetricCosts($metricCosts)
   {
-    $this->address = $address;
+    $this->metricCosts = $metricCosts;
   }
-  public function getAddress()
+  public function getMetricCosts()
   {
-    return $this->address;
-  }
-  public function setDeadline($deadline)
-  {
-    $this->deadline = $deadline;
-  }
-  public function getDeadline()
-  {
-    return $this->deadline;
-  }
-  public function setMinDeadline($minDeadline)
-  {
-    $this->minDeadline = $minDeadline;
-  }
-  public function getMinDeadline()
-  {
-    return $this->minDeadline;
+    return $this->metricCosts;
   }
   public function setSelector($selector)
   {
