@@ -15,27 +15,26 @@
  * the License.
  */
 
-class Google_Service_FirebaseRules_TestRulesetRequest extends Google_Model
+class Google_Service_FirebaseRules_Arg extends Google_Model
 {
-  protected $sourceType = 'Google_Service_FirebaseRules_Source';
-  protected $sourceDataType = '';
-  protected $testSuiteType = 'Google_Service_FirebaseRules_TestSuite';
-  protected $testSuiteDataType = '';
+  protected $anyValueType = 'Google_Service_FirebaseRules_FirebaserulesEmpty';
+  protected $anyValueDataType = '';
+  public $exactValue;
 
-  public function setSource(Google_Service_FirebaseRules_Source $source)
+  public function setAnyValue(Google_Service_FirebaseRules_FirebaserulesEmpty $anyValue)
   {
-    $this->source = $source;
+    $this->anyValue = $anyValue;
   }
-  public function getSource()
+  public function getAnyValue()
   {
-    return $this->source;
+    return $this->anyValue;
   }
-  public function setTestSuite(Google_Service_FirebaseRules_TestSuite $testSuite)
+  public function setExactValue($exactValue)
   {
-    $this->testSuite = $testSuite;
+    $this->exactValue = $exactValue;
   }
-  public function getTestSuite()
+  public function getExactValue()
   {
-    return $this->testSuite;
+    return $this->exactValue;
   }
 }
