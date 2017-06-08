@@ -15,16 +15,17 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_RevertFolderResponse extends Google_Model
 {
-  public $permission;
+  protected $folderType = 'Google_Service_TagManager_Folder';
+  protected $folderDataType = '';
 
-  public function setPermission($permission)
+  public function setFolder(Google_Service_TagManager_Folder $folder)
   {
-    $this->permission = $permission;
+    $this->folder = $folder;
   }
-  public function getPermission()
+  public function getFolder()
   {
-    return $this->permission;
+    return $this->folder;
   }
 }

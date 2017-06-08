@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_TagManager_UserAccess extends Google_Collection
+class Google_Service_TagManager_UserPermission extends Google_Collection
 {
   protected $collection_key = 'containerAccess';
   protected $accountAccessType = 'Google_Service_TagManager_AccountAccess';
@@ -24,7 +24,7 @@ class Google_Service_TagManager_UserAccess extends Google_Collection
   protected $containerAccessType = 'Google_Service_TagManager_ContainerAccess';
   protected $containerAccessDataType = 'array';
   public $emailAddress;
-  public $permissionId;
+  public $path;
 
   public function setAccountAccess(Google_Service_TagManager_AccountAccess $accountAccess)
   {
@@ -58,12 +58,12 @@ class Google_Service_TagManager_UserAccess extends Google_Collection
   {
     return $this->emailAddress;
   }
-  public function setPermissionId($permissionId)
+  public function setPath($path)
   {
-    $this->permissionId = $permissionId;
+    $this->path = $path;
   }
-  public function getPermissionId()
+  public function getPath()
   {
-    return $this->permissionId;
+    return $this->path;
   }
 }

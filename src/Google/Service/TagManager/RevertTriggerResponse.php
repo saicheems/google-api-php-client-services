@@ -15,16 +15,17 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_RevertTriggerResponse extends Google_Model
 {
-  public $permission;
+  protected $triggerType = 'Google_Service_TagManager_Trigger';
+  protected $triggerDataType = '';
 
-  public function setPermission($permission)
+  public function setTrigger(Google_Service_TagManager_Trigger $trigger)
   {
-    $this->permission = $permission;
+    $this->trigger = $trigger;
   }
-  public function getPermission()
+  public function getTrigger()
   {
-    return $this->permission;
+    return $this->trigger;
   }
 }

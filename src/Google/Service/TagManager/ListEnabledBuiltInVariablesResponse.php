@@ -15,20 +15,20 @@
  * the License.
  */
 
-class Google_Service_TagManager_ListContainerVersionsResponse extends Google_Collection
+class Google_Service_TagManager_ListEnabledBuiltInVariablesResponse extends Google_Collection
 {
-  protected $collection_key = 'containerVersionHeader';
-  protected $containerVersionHeaderType = 'Google_Service_TagManager_ContainerVersionHeader';
-  protected $containerVersionHeaderDataType = 'array';
+  protected $collection_key = 'builtInVariable';
+  protected $builtInVariableType = 'Google_Service_TagManager_BuiltInVariable';
+  protected $builtInVariableDataType = 'array';
   public $nextPageToken;
 
-  public function setContainerVersionHeader($containerVersionHeader)
+  public function setBuiltInVariable($builtInVariable)
   {
-    $this->containerVersionHeader = $containerVersionHeader;
+    $this->builtInVariable = $builtInVariable;
   }
-  public function getContainerVersionHeader()
+  public function getBuiltInVariable()
   {
-    return $this->containerVersionHeader;
+    return $this->builtInVariable;
   }
   public function setNextPageToken($nextPageToken)
   {

@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_WorkspaceProposalHistoryStatusChange extends Google_Model
 {
-  public $permission;
+  public $newStatus;
+  public $oldStatus;
 
-  public function setPermission($permission)
+  public function setNewStatus($newStatus)
   {
-    $this->permission = $permission;
+    $this->newStatus = $newStatus;
   }
-  public function getPermission()
+  public function getNewStatus()
   {
-    return $this->permission;
+    return $this->newStatus;
+  }
+  public function setOldStatus($oldStatus)
+  {
+    $this->oldStatus = $oldStatus;
+  }
+  public function getOldStatus()
+  {
+    return $this->oldStatus;
   }
 }

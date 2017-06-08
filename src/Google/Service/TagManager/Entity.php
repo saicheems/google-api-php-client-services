@@ -15,26 +15,35 @@
  * the License.
  */
 
-class Google_Service_TagManager_FolderEntities extends Google_Collection
+class Google_Service_TagManager_Entity extends Google_Model
 {
-  protected $collection_key = 'variable';
-  public $nextPageToken;
+  public $changeStatus;
+  protected $folderType = 'Google_Service_TagManager_Folder';
+  protected $folderDataType = '';
   protected $tagType = 'Google_Service_TagManager_Tag';
-  protected $tagDataType = 'array';
+  protected $tagDataType = '';
   protected $triggerType = 'Google_Service_TagManager_Trigger';
-  protected $triggerDataType = 'array';
+  protected $triggerDataType = '';
   protected $variableType = 'Google_Service_TagManager_Variable';
-  protected $variableDataType = 'array';
+  protected $variableDataType = '';
 
-  public function setNextPageToken($nextPageToken)
+  public function setChangeStatus($changeStatus)
   {
-    $this->nextPageToken = $nextPageToken;
+    $this->changeStatus = $changeStatus;
   }
-  public function getNextPageToken()
+  public function getChangeStatus()
   {
-    return $this->nextPageToken;
+    return $this->changeStatus;
   }
-  public function setTag($tag)
+  public function setFolder(Google_Service_TagManager_Folder $folder)
+  {
+    $this->folder = $folder;
+  }
+  public function getFolder()
+  {
+    return $this->folder;
+  }
+  public function setTag(Google_Service_TagManager_Tag $tag)
   {
     $this->tag = $tag;
   }
@@ -42,7 +51,7 @@ class Google_Service_TagManager_FolderEntities extends Google_Collection
   {
     return $this->tag;
   }
-  public function setTrigger($trigger)
+  public function setTrigger(Google_Service_TagManager_Trigger $trigger)
   {
     $this->trigger = $trigger;
   }
@@ -50,7 +59,7 @@ class Google_Service_TagManager_FolderEntities extends Google_Collection
   {
     return $this->trigger;
   }
-  public function setVariable($variable)
+  public function setVariable(Google_Service_TagManager_Variable $variable)
   {
     $this->variable = $variable;
   }

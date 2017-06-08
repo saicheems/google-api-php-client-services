@@ -15,14 +15,13 @@
  * the License.
  */
 
-class Google_Service_TagManager_Folder extends Google_Model
+class Google_Service_TagManager_Workspace extends Google_Model
 {
   public $accountId;
   public $containerId;
+  public $description;
   public $fingerprint;
-  public $folderId;
   public $name;
-  public $notes;
   public $path;
   public $tagManagerUrl;
   public $workspaceId;
@@ -43,6 +42,14 @@ class Google_Service_TagManager_Folder extends Google_Model
   {
     return $this->containerId;
   }
+  public function setDescription($description)
+  {
+    $this->description = $description;
+  }
+  public function getDescription()
+  {
+    return $this->description;
+  }
   public function setFingerprint($fingerprint)
   {
     $this->fingerprint = $fingerprint;
@@ -51,14 +58,6 @@ class Google_Service_TagManager_Folder extends Google_Model
   {
     return $this->fingerprint;
   }
-  public function setFolderId($folderId)
-  {
-    $this->folderId = $folderId;
-  }
-  public function getFolderId()
-  {
-    return $this->folderId;
-  }
   public function setName($name)
   {
     $this->name = $name;
@@ -66,14 +65,6 @@ class Google_Service_TagManager_Folder extends Google_Model
   public function getName()
   {
     return $this->name;
-  }
-  public function setNotes($notes)
-  {
-    $this->notes = $notes;
-  }
-  public function getNotes()
-  {
-    return $this->notes;
   }
   public function setPath($path)
   {

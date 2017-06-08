@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_SyncStatus extends Google_Model
 {
-  public $permission;
+  public $mergeConflict;
+  public $syncError;
 
-  public function setPermission($permission)
+  public function setMergeConflict($mergeConflict)
   {
-    $this->permission = $permission;
+    $this->mergeConflict = $mergeConflict;
   }
-  public function getPermission()
+  public function getMergeConflict()
   {
-    return $this->permission;
+    return $this->mergeConflict;
+  }
+  public function setSyncError($syncError)
+  {
+    $this->syncError = $syncError;
+  }
+  public function getSyncError()
+  {
+    return $this->syncError;
   }
 }

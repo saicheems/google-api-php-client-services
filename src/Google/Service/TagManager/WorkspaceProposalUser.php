@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_WorkspaceProposalUser extends Google_Model
 {
-  public $permission;
+  public $gaiaId;
+  public $type;
 
-  public function setPermission($permission)
+  public function setGaiaId($gaiaId)
   {
-    $this->permission = $permission;
+    $this->gaiaId = $gaiaId;
   }
-  public function getPermission()
+  public function getGaiaId()
   {
-    return $this->permission;
+    return $this->gaiaId;
+  }
+  public function setType($type)
+  {
+    $this->type = $type;
+  }
+  public function getType()
+  {
+    return $this->type;
   }
 }

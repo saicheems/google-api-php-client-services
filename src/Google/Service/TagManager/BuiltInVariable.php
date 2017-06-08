@@ -15,17 +15,14 @@
  * the License.
  */
 
-class Google_Service_TagManager_Rule extends Google_Collection
+class Google_Service_TagManager_BuiltInVariable extends Google_Model
 {
-  protected $collection_key = 'condition';
   public $accountId;
-  protected $conditionType = 'Google_Service_TagManager_Condition';
-  protected $conditionDataType = 'array';
   public $containerId;
-  public $fingerprint;
   public $name;
-  public $notes;
-  public $ruleId;
+  public $path;
+  public $type;
+  public $workspaceId;
 
   public function setAccountId($accountId)
   {
@@ -35,14 +32,6 @@ class Google_Service_TagManager_Rule extends Google_Collection
   {
     return $this->accountId;
   }
-  public function setCondition($condition)
-  {
-    $this->condition = $condition;
-  }
-  public function getCondition()
-  {
-    return $this->condition;
-  }
   public function setContainerId($containerId)
   {
     $this->containerId = $containerId;
@@ -50,14 +39,6 @@ class Google_Service_TagManager_Rule extends Google_Collection
   public function getContainerId()
   {
     return $this->containerId;
-  }
-  public function setFingerprint($fingerprint)
-  {
-    $this->fingerprint = $fingerprint;
-  }
-  public function getFingerprint()
-  {
-    return $this->fingerprint;
   }
   public function setName($name)
   {
@@ -67,20 +48,28 @@ class Google_Service_TagManager_Rule extends Google_Collection
   {
     return $this->name;
   }
-  public function setNotes($notes)
+  public function setPath($path)
   {
-    $this->notes = $notes;
+    $this->path = $path;
   }
-  public function getNotes()
+  public function getPath()
   {
-    return $this->notes;
+    return $this->path;
   }
-  public function setRuleId($ruleId)
+  public function setType($type)
   {
-    $this->ruleId = $ruleId;
+    $this->type = $type;
   }
-  public function getRuleId()
+  public function getType()
   {
-    return $this->ruleId;
+    return $this->type;
+  }
+  public function setWorkspaceId($workspaceId)
+  {
+    $this->workspaceId = $workspaceId;
+  }
+  public function getWorkspaceId()
+  {
+    return $this->workspaceId;
   }
 }

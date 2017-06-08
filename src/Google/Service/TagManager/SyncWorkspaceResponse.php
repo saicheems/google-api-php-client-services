@@ -15,38 +15,21 @@
  * the License.
  */
 
-class Google_Service_TagManager_CreateContainerVersionResponse extends Google_Model
+class Google_Service_TagManager_SyncWorkspaceResponse extends Google_Collection
 {
-  public $compilerError;
-  protected $containerVersionType = 'Google_Service_TagManager_ContainerVersion';
-  protected $containerVersionDataType = '';
-  public $newWorkspacePath;
+  protected $collection_key = 'mergeConflict';
+  protected $mergeConflictType = 'Google_Service_TagManager_MergeConflict';
+  protected $mergeConflictDataType = 'array';
   protected $syncStatusType = 'Google_Service_TagManager_SyncStatus';
   protected $syncStatusDataType = '';
 
-  public function setCompilerError($compilerError)
+  public function setMergeConflict($mergeConflict)
   {
-    $this->compilerError = $compilerError;
+    $this->mergeConflict = $mergeConflict;
   }
-  public function getCompilerError()
+  public function getMergeConflict()
   {
-    return $this->compilerError;
-  }
-  public function setContainerVersion(Google_Service_TagManager_ContainerVersion $containerVersion)
-  {
-    $this->containerVersion = $containerVersion;
-  }
-  public function getContainerVersion()
-  {
-    return $this->containerVersion;
-  }
-  public function setNewWorkspacePath($newWorkspacePath)
-  {
-    $this->newWorkspacePath = $newWorkspacePath;
-  }
-  public function getNewWorkspacePath()
-  {
-    return $this->newWorkspacePath;
+    return $this->mergeConflict;
   }
   public function setSyncStatus(Google_Service_TagManager_SyncStatus $syncStatus)
   {

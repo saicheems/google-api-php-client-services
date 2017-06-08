@@ -15,16 +15,18 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_CreateBuiltInVariableResponse extends Google_Collection
 {
-  public $permission;
+  protected $collection_key = 'builtInVariable';
+  protected $builtInVariableType = 'Google_Service_TagManager_BuiltInVariable';
+  protected $builtInVariableDataType = 'array';
 
-  public function setPermission($permission)
+  public function setBuiltInVariable($builtInVariable)
   {
-    $this->permission = $permission;
+    $this->builtInVariable = $builtInVariable;
   }
-  public function getPermission()
+  public function getBuiltInVariable()
   {
-    return $this->permission;
+    return $this->builtInVariable;
   }
 }

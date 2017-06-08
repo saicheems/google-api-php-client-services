@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_Timestamp extends Google_Model
 {
-  public $permission;
+  public $nanos;
+  public $seconds;
 
-  public function setPermission($permission)
+  public function setNanos($nanos)
   {
-    $this->permission = $permission;
+    $this->nanos = $nanos;
   }
-  public function getPermission()
+  public function getNanos()
   {
-    return $this->permission;
+    return $this->nanos;
+  }
+  public function setSeconds($seconds)
+  {
+    $this->seconds = $seconds;
+  }
+  public function getSeconds()
+  {
+    return $this->seconds;
   }
 }

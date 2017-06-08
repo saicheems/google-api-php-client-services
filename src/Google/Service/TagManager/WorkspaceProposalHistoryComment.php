@@ -15,16 +15,16 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_WorkspaceProposalHistoryComment extends Google_Model
 {
-  public $permission;
+  public $content;
 
-  public function setPermission($permission)
+  public function setContent($content)
   {
-    $this->permission = $permission;
+    $this->content = $content;
   }
-  public function getPermission()
+  public function getContent()
   {
-    return $this->permission;
+    return $this->content;
   }
 }

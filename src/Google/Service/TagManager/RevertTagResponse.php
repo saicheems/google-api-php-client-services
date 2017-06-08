@@ -15,18 +15,17 @@
  * the License.
  */
 
-class Google_Service_TagManager_ListAccountUsersResponse extends Google_Collection
+class Google_Service_TagManager_RevertTagResponse extends Google_Model
 {
-  protected $collection_key = 'userAccess';
-  protected $userAccessType = 'Google_Service_TagManager_UserAccess';
-  protected $userAccessDataType = 'array';
+  protected $tagType = 'Google_Service_TagManager_Tag';
+  protected $tagDataType = '';
 
-  public function setUserAccess($userAccess)
+  public function setTag(Google_Service_TagManager_Tag $tag)
   {
-    $this->userAccess = $userAccess;
+    $this->tag = $tag;
   }
-  public function getUserAccess()
+  public function getTag()
   {
-    return $this->userAccess;
+    return $this->tag;
   }
 }

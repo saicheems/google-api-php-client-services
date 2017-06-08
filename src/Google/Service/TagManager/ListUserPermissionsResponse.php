@@ -15,21 +15,13 @@
  * the License.
  */
 
-class Google_Service_TagManager_ListContainerVersionsResponse extends Google_Collection
+class Google_Service_TagManager_ListUserPermissionsResponse extends Google_Collection
 {
-  protected $collection_key = 'containerVersionHeader';
-  protected $containerVersionHeaderType = 'Google_Service_TagManager_ContainerVersionHeader';
-  protected $containerVersionHeaderDataType = 'array';
+  protected $collection_key = 'userPermission';
   public $nextPageToken;
+  protected $userPermissionType = 'Google_Service_TagManager_UserPermission';
+  protected $userPermissionDataType = 'array';
 
-  public function setContainerVersionHeader($containerVersionHeader)
-  {
-    $this->containerVersionHeader = $containerVersionHeader;
-  }
-  public function getContainerVersionHeader()
-  {
-    return $this->containerVersionHeader;
-  }
   public function setNextPageToken($nextPageToken)
   {
     $this->nextPageToken = $nextPageToken;
@@ -37,5 +29,13 @@ class Google_Service_TagManager_ListContainerVersionsResponse extends Google_Col
   public function getNextPageToken()
   {
     return $this->nextPageToken;
+  }
+  public function setUserPermission($userPermission)
+  {
+    $this->userPermission = $userPermission;
+  }
+  public function getUserPermission()
+  {
+    return $this->userPermission;
   }
 }

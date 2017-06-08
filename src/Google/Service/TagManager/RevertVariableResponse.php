@@ -15,16 +15,17 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Model
+class Google_Service_TagManager_RevertVariableResponse extends Google_Model
 {
-  public $permission;
+  protected $variableType = 'Google_Service_TagManager_Variable';
+  protected $variableDataType = '';
 
-  public function setPermission($permission)
+  public function setVariable(Google_Service_TagManager_Variable $variable)
   {
-    $this->permission = $permission;
+    $this->variable = $variable;
   }
-  public function getPermission()
+  public function getVariable()
   {
-    return $this->permission;
+    return $this->variable;
   }
 }
