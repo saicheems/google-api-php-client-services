@@ -15,26 +15,17 @@
  * the License.
  */
 
-class Google_Service_Sheets_BasicChartDomain extends Google_Model
+class Google_Service_Sheets_CandlestickSeries extends Google_Model
 {
-  protected $domainType = 'Google_Service_Sheets_ChartData';
-  protected $domainDataType = '';
-  public $reversed;
+  protected $dataType = 'Google_Service_Sheets_ChartData';
+  protected $dataDataType = '';
 
-  public function setDomain(Google_Service_Sheets_ChartData $domain)
+  public function setData(Google_Service_Sheets_ChartData $data)
   {
-    $this->domain = $domain;
+    $this->data = $data;
   }
-  public function getDomain()
+  public function getData()
   {
-    return $this->domain;
-  }
-  public function setReversed($reversed)
-  {
-    $this->reversed = $reversed;
-  }
-  public function getReversed()
-  {
-    return $this->reversed;
+    return $this->data;
   }
 }

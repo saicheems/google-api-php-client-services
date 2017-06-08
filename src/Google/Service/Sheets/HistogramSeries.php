@@ -15,26 +15,27 @@
  * the License.
  */
 
-class Google_Service_Sheets_BasicChartDomain extends Google_Model
+class Google_Service_Sheets_HistogramSeries extends Google_Model
 {
-  protected $domainType = 'Google_Service_Sheets_ChartData';
-  protected $domainDataType = '';
-  public $reversed;
+  protected $barColorType = 'Google_Service_Sheets_Color';
+  protected $barColorDataType = '';
+  protected $dataType = 'Google_Service_Sheets_ChartData';
+  protected $dataDataType = '';
 
-  public function setDomain(Google_Service_Sheets_ChartData $domain)
+  public function setBarColor(Google_Service_Sheets_Color $barColor)
   {
-    $this->domain = $domain;
+    $this->barColor = $barColor;
   }
-  public function getDomain()
+  public function getBarColor()
   {
-    return $this->domain;
+    return $this->barColor;
   }
-  public function setReversed($reversed)
+  public function setData(Google_Service_Sheets_ChartData $data)
   {
-    $this->reversed = $reversed;
+    $this->data = $data;
   }
-  public function getReversed()
+  public function getData()
   {
-    return $this->reversed;
+    return $this->data;
   }
 }
