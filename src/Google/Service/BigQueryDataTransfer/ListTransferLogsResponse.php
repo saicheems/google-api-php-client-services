@@ -15,11 +15,11 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_ListTransferLogsResponse extends Google_Collection
+class Google_Service_BIGQUERYDATATRANSFER_ListTransferLogsResponse extends Google_Collection
 {
   protected $collection_key = 'transferMessages';
   public $nextPageToken;
-  protected $transferMessagesType = 'Google_Service_BigQueryDataTransfer_TransferMessage';
+  protected $transferMessagesType = 'Google_Service_BIGQUERYDATATRANSFER_TransferMessage';
   protected $transferMessagesDataType = 'array';
 
   public function setNextPageToken($nextPageToken)

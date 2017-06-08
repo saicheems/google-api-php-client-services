@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_TransferRun extends Google_Model
+class Google_Service_BIGQUERYDATATRANSFER_TransferRun extends Google_Model
 {
   public $dataSourceId;
   public $destinationDatasetId;

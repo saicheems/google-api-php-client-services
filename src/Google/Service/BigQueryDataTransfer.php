@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for BigQueryDataTransfer (v1).
+ * Service definition for BIGQUERYDATATRANSFER (v1).
  *
  * <p>
  * Transfers data from partner SaaS applications to Google BigQuery on a
@@ -29,7 +29,7 @@
  *
  * @author Google, Inc.
  */
-class Google_Service_BigQueryDataTransfer extends Google_Service
+class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
 {
   /** View and manage your data in Google BigQuery. */
   const BIGQUERY =
@@ -42,7 +42,7 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
   public $projects_transferConfigs_runs_transferLogs;
   
   /**
-   * Constructs the internal representation of the BigQueryDataTransfer service.
+   * Constructs the internal representation of the BIGQUERYDATATRANSFER service.
    *
    * @param Google_Client $client
    */
@@ -54,7 +54,7 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
     $this->version = 'v1';
     $this->serviceName = 'bigquerydatatransfer';
 
-    $this->projects = new Google_Service_BigQueryDataTransfer_Resource_Projects(
+    $this->projects = new Google_Service_BIGQUERYDATATRANSFER_Resource_Projects(
         $this,
         $this->serviceName,
         'projects',
@@ -84,7 +84,7 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
           )
         )
     );
-    $this->projects_dataSources = new Google_Service_BigQueryDataTransfer_Resource_ProjectsDataSources(
+    $this->projects_dataSources = new Google_Service_BIGQUERYDATATRANSFER_Resource_ProjectsDataSources(
         $this,
         $this->serviceName,
         'dataSources',
@@ -132,7 +132,7 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
           )
         )
     );
-    $this->projects_transferConfigs = new Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigs(
+    $this->projects_transferConfigs = new Google_Service_BIGQUERYDATATRANSFER_Resource_ProjectsTransferConfigs(
         $this,
         $this->serviceName,
         'transferConfigs',
@@ -181,10 +181,6 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -193,6 +189,10 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'patch' => array(
@@ -227,7 +227,7 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
           )
         )
     );
-    $this->projects_transferConfigs_runs = new Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRuns(
+    $this->projects_transferConfigs_runs = new Google_Service_BIGQUERYDATATRANSFER_Resource_ProjectsTransferConfigsRuns(
         $this,
         $this->serviceName,
         'runs',
@@ -262,10 +262,6 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'runAttempt' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -279,12 +275,16 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+                'runAttempt' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),
           )
         )
     );
-    $this->projects_transferConfigs_runs_transferLogs = new Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRunsTransferLogs(
+    $this->projects_transferConfigs_runs_transferLogs = new Google_Service_BIGQUERYDATATRANSFER_Resource_ProjectsTransferConfigsRunsTransferLogs(
         $this,
         $this->serviceName,
         'transferLogs',

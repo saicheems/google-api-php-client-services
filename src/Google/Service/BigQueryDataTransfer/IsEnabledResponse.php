@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_IsEnabledResponse extends Google_Model
+class Google_Service_BIGQUERYDATATRANSFER_IsEnabledResponse extends Google_Model
 {
   public $enabled;
 

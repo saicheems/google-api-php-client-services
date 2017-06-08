@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_DataSource extends Google_Collection
+class Google_Service_BIGQUERYDATATRANSFER_DataSource extends Google_Collection
 {
   protected $collection_key = 'scopes';
   public $authorizationType;
@@ -29,7 +29,7 @@ class Google_Service_BigQueryDataTransfer_DataSource extends Google_Collection
   public $helpUrl;
   public $manualRunsDisabled;
   public $name;
-  protected $parametersType = 'Google_Service_BigQueryDataTransfer_DataSourceParameter';
+  protected $parametersType = 'Google_Service_BIGQUERYDATATRANSFER_DataSourceParameter';
   protected $parametersDataType = 'array';
   public $scopes;
   public $statusUpdateDeadlineSeconds;

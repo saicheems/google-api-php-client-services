@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_CheckValidCredsResponse extends Google_Model
+class Google_Service_BIGQUERYDATATRANSFER_CheckValidCredsResponse extends Google_Model
 {
   public $hasValidCreds;
 

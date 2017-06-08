@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_ScheduleTransferRunsResponse extends Google_Collection
+class Google_Service_BIGQUERYDATATRANSFER_ScheduleTransferRunsResponse extends Google_Collection
 {
   protected $collection_key = 'createdRuns';
-  protected $createdRunsType = 'Google_Service_BigQueryDataTransfer_TransferRun';
+  protected $createdRunsType = 'Google_Service_BIGQUERYDATATRANSFER_TransferRun';
   protected $createdRunsDataType = 'array';
 
   public function setCreatedRuns($createdRuns)

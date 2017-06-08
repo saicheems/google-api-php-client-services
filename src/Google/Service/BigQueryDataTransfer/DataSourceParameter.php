@@ -15,13 +15,13 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_DataSourceParameter extends Google_Collection
+class Google_Service_BIGQUERYDATATRANSFER_DataSourceParameter extends Google_Collection
 {
   protected $collection_key = 'fields';
   public $allowedValues;
   public $description;
   public $displayName;
-  protected $fieldsType = 'Google_Service_BigQueryDataTransfer_DataSourceParameter';
+  protected $fieldsType = 'Google_Service_BIGQUERYDATATRANSFER_DataSourceParameter';
   protected $fieldsDataType = 'array';
   public $immutable;
   public $maxValue;

@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_TransferMessage extends Google_Model
+class Google_Service_BIGQUERYDATATRANSFER_TransferMessage extends Google_Model
 {
   public $messageText;
   public $messageTime;

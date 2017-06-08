@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_ScheduleTransferRunsRequest extends Google_Model
+class Google_Service_BIGQUERYDATATRANSFER_ScheduleTransferRunsRequest extends Google_Model
 {
   public $rangeEndTime;
   public $rangeStartTime;

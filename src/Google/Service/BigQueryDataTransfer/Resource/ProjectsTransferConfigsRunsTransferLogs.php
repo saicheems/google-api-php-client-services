@@ -19,11 +19,11 @@
  * The "transferLogs" collection of methods.
  * Typical usage is:
  *  <code>
- *   $bigquerydatatransferService = new Google_Service_BigQueryDataTransfer(...);
+ *   $bigquerydatatransferService = new Google_Service_BIGQUERYDATATRANSFER(...);
  *   $transferLogs = $bigquerydatatransferService->transferLogs;
  *  </code>
  */
-class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRunsTransferLogs extends Google_Service_Resource
+class Google_Service_BIGQUERYDATATRANSFER_Resource_ProjectsTransferConfigsRunsTransferLogs extends Google_Service_Resource
 {
   /**
    * Returns user facing log messages for the data transfer run.
@@ -41,12 +41,12 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRunsTr
    * of 1000 results.
    * @opt_param string messageTypes Message types to return. If not populated -
    * INFO, WARNING and ERROR messages are returned.
-   * @return Google_Service_BigQueryDataTransfer_ListTransferLogsResponse
+   * @return Google_Service_BIGQUERYDATATRANSFER_ListTransferLogsResponse
    */
   public function listProjectsTransferConfigsRunsTransferLogs($parent, $optParams = array())
   {
     $params = array('parent' => $parent);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_BigQueryDataTransfer_ListTransferLogsResponse");
+    return $this->call('list', array($params), "Google_Service_BIGQUERYDATATRANSFER_ListTransferLogsResponse");
   }
 }

@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_TransferConfig extends Google_Model
+class Google_Service_BIGQUERYDATATRANSFER_TransferConfig extends Google_Model
 {
   public $dataRefreshWindowDays;
   public $dataSourceId;

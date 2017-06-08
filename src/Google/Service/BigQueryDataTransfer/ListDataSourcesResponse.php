@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_ListDataSourcesResponse extends Google_Collection
+class Google_Service_BIGQUERYDATATRANSFER_ListDataSourcesResponse extends Google_Collection
 {
   protected $collection_key = 'dataSources';
-  protected $dataSourcesType = 'Google_Service_BigQueryDataTransfer_DataSource';
+  protected $dataSourcesType = 'Google_Service_BIGQUERYDATATRANSFER_DataSource';
   protected $dataSourcesDataType = 'array';
   public $nextPageToken;
 

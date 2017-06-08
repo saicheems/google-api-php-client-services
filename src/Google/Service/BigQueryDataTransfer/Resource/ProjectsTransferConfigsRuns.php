@@ -19,11 +19,11 @@
  * The "runs" collection of methods.
  * Typical usage is:
  *  <code>
- *   $bigquerydatatransferService = new Google_Service_BigQueryDataTransfer(...);
+ *   $bigquerydatatransferService = new Google_Service_BIGQUERYDATATRANSFER(...);
  *   $runs = $bigquerydatatransferService->runs;
  *  </code>
  */
-class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRuns extends Google_Service_Resource
+class Google_Service_BIGQUERYDATATRANSFER_Resource_ProjectsTransferConfigsRuns extends Google_Service_Resource
 {
   /**
    * Deletes the specified transfer run. (runs.delete)
@@ -32,13 +32,13 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRuns e
    * for example:
    * `projects/{project_id}/transferConfigs/{config_id}/runs/{run_id}`
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BigQueryDataTransfer_BigquerydatatransferEmpty
+   * @return Google_Service_BIGQUERYDATATRANSFER_BigquerydatatransferEmpty
    */
   public function delete($name, $optParams = array())
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), "Google_Service_BigQueryDataTransfer_BigquerydatatransferEmpty");
+    return $this->call('delete', array($params), "Google_Service_BIGQUERYDATATRANSFER_BigquerydatatransferEmpty");
   }
   /**
    * Returns information about the particular transfer run. (runs.get)
@@ -47,13 +47,13 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRuns e
    * for example:
    * `projects/{project_id}/transferConfigs/{config_id}/runs/{run_id}`
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BigQueryDataTransfer_TransferRun
+   * @return Google_Service_BIGQUERYDATATRANSFER_TransferRun
    */
   public function get($name, $optParams = array())
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_BigQueryDataTransfer_TransferRun");
+    return $this->call('get', array($params), "Google_Service_BIGQUERYDATATRANSFER_TransferRun");
   }
   /**
    * Returns information about running and completed jobs.
@@ -64,7 +64,6 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRuns e
    * `projects/{project_id}/transferConfigs/{config_id}`.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string runAttempt Indicates how run attempts are to be pulled.
    * @opt_param string pageToken Pagination token, which can be used to request a
    * specific page of `ListTransferRunsRequest` list results. For multiple-page
    * results, `ListTransferRunsResponse` outputs a `next_page` token, which can be
@@ -73,12 +72,13 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigsRuns e
    * statuses are returned.
    * @opt_param int pageSize Page size. The default page size is the maximum value
    * of 1000 results.
-   * @return Google_Service_BigQueryDataTransfer_ListTransferRunsResponse
+   * @opt_param string runAttempt Indicates how run attempts are to be pulled.
+   * @return Google_Service_BIGQUERYDATATRANSFER_ListTransferRunsResponse
    */
   public function listProjectsTransferConfigsRuns($parent, $optParams = array())
   {
     $params = array('parent' => $parent);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_BigQueryDataTransfer_ListTransferRunsResponse");
+    return $this->call('list', array($params), "Google_Service_BIGQUERYDATATRANSFER_ListTransferRunsResponse");
   }
 }
