@@ -15,38 +15,10 @@
  * the License.
  */
 
-class Google_Service_Compute_HTTP2HealthCheck extends Google_Model
+class Google_Service_Compute_TargetTcpProxiesSetProxyHeaderRequest extends Google_Model
 {
-  public $host;
-  public $port;
-  public $portName;
   public $proxyHeader;
-  public $requestPath;
 
-  public function setHost($host)
-  {
-    $this->host = $host;
-  }
-  public function getHost()
-  {
-    return $this->host;
-  }
-  public function setPort($port)
-  {
-    $this->port = $port;
-  }
-  public function getPort()
-  {
-    return $this->port;
-  }
-  public function setPortName($portName)
-  {
-    $this->portName = $portName;
-  }
-  public function getPortName()
-  {
-    return $this->portName;
-  }
   public function setProxyHeader($proxyHeader)
   {
     $this->proxyHeader = $proxyHeader;
@@ -54,13 +26,5 @@ class Google_Service_Compute_HTTP2HealthCheck extends Google_Model
   public function getProxyHeader()
   {
     return $this->proxyHeader;
-  }
-  public function setRequestPath($requestPath)
-  {
-    $this->requestPath = $requestPath;
-  }
-  public function getRequestPath()
-  {
-    return $this->requestPath;
   }
 }
