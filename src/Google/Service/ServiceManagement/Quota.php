@@ -15,27 +15,28 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_Http extends Google_Collection
+class Google_Service_ServiceManagement_Quota extends Google_Collection
 {
-  protected $collection_key = 'rules';
-  public $fullyDecodeReservedExpansion;
-  protected $rulesType = 'Google_Service_ServiceManagement_HttpRule';
-  protected $rulesDataType = 'array';
+  protected $collection_key = 'metricRules';
+  protected $limitsType = 'Google_Service_ServiceManagement_QuotaLimit';
+  protected $limitsDataType = 'array';
+  protected $metricRulesType = 'Google_Service_ServiceManagement_MetricRule';
+  protected $metricRulesDataType = 'array';
 
-  public function setFullyDecodeReservedExpansion($fullyDecodeReservedExpansion)
+  public function setLimits($limits)
   {
-    $this->fullyDecodeReservedExpansion = $fullyDecodeReservedExpansion;
+    $this->limits = $limits;
   }
-  public function getFullyDecodeReservedExpansion()
+  public function getLimits()
   {
-    return $this->fullyDecodeReservedExpansion;
+    return $this->limits;
   }
-  public function setRules($rules)
+  public function setMetricRules($metricRules)
   {
-    $this->rules = $rules;
+    $this->metricRules = $metricRules;
   }
-  public function getRules()
+  public function getMetricRules()
   {
-    return $this->rules;
+    return $this->metricRules;
   }
 }

@@ -15,26 +15,16 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_AnalyticsDestination extends Google_Collection
+class Google_Service_ServiceManagement_CustomAuthRequirements extends Google_Model
 {
-  protected $collection_key = 'metrics';
-  public $metrics;
-  public $monitoredResource;
+  public $provider;
 
-  public function setMetrics($metrics)
+  public function setProvider($provider)
   {
-    $this->metrics = $metrics;
+    $this->provider = $provider;
   }
-  public function getMetrics()
+  public function getProvider()
   {
-    return $this->metrics;
-  }
-  public function setMonitoredResource($monitoredResource)
-  {
-    $this->monitoredResource = $monitoredResource;
-  }
-  public function getMonitoredResource()
-  {
-    return $this->monitoredResource;
+    return $this->provider;
   }
 }

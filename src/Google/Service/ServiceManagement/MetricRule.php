@@ -15,18 +15,25 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_Analytics extends Google_Collection
+class Google_Service_ServiceManagement_MetricRule extends Google_Model
 {
-  protected $collection_key = 'producerDestinations';
-  protected $producerDestinationsType = 'Google_Service_ServiceManagement_AnalyticsDestination';
-  protected $producerDestinationsDataType = 'array';
+  public $metricCosts;
+  public $selector;
 
-  public function setProducerDestinations($producerDestinations)
+  public function setMetricCosts($metricCosts)
   {
-    $this->producerDestinations = $producerDestinations;
+    $this->metricCosts = $metricCosts;
   }
-  public function getProducerDestinations()
+  public function getMetricCosts()
   {
-    return $this->producerDestinations;
+    return $this->metricCosts;
+  }
+  public function setSelector($selector)
+  {
+    $this->selector = $selector;
+  }
+  public function getSelector()
+  {
+    return $this->selector;
   }
 }
