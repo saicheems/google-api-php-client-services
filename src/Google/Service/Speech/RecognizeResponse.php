@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Speech_SyncRecognizeResponse extends Google_Collection
+class Google_Service_Speech_RecognizeResponse extends Google_Collection
 {
   protected $collection_key = 'results';
   protected $resultsType = 'Google_Service_Speech_SpeechRecognitionResult';

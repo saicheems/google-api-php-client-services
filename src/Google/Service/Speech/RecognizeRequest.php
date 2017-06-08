@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Speech_AsyncRecognizeRequest extends Google_Model
+class Google_Service_Speech_RecognizeRequest extends Google_Model
 {
   protected $audioType = 'Google_Service_Speech_RecognitionAudio';
   protected $audioDataType = '';
