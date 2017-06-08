@@ -15,19 +15,22 @@
  * the License.
  */
 
-class Google_Service_Translate_TranslationsResource extends Google_Model
+class Google_Service_Translate_TranslateTextRequest extends Google_Collection
 {
-  public $detectedSourceLanguage;
+  protected $collection_key = 'q';
+  public $format;
   public $model;
-  public $translatedText;
+  public $q;
+  public $source;
+  public $target;
 
-  public function setDetectedSourceLanguage($detectedSourceLanguage)
+  public function setFormat($format)
   {
-    $this->detectedSourceLanguage = $detectedSourceLanguage;
+    $this->format = $format;
   }
-  public function getDetectedSourceLanguage()
+  public function getFormat()
   {
-    return $this->detectedSourceLanguage;
+    return $this->format;
   }
   public function setModel($model)
   {
@@ -37,12 +40,28 @@ class Google_Service_Translate_TranslationsResource extends Google_Model
   {
     return $this->model;
   }
-  public function setTranslatedText($translatedText)
+  public function setQ($q)
   {
-    $this->translatedText = $translatedText;
+    $this->q = $q;
   }
-  public function getTranslatedText()
+  public function getQ()
   {
-    return $this->translatedText;
+    return $this->q;
+  }
+  public function setSource($source)
+  {
+    $this->source = $source;
+  }
+  public function getSource()
+  {
+    return $this->source;
+  }
+  public function setTarget($target)
+  {
+    $this->target = $target;
+  }
+  public function getTarget()
+  {
+    return $this->target;
   }
 }
