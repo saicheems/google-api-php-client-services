@@ -15,17 +15,25 @@
  * the License.
  */
 
-class Google_Service_Dataflow_LaunchTemplateResponse extends Google_Model
+class Google_Service_Dataflow_LogBucket extends Google_Model
 {
-  protected $jobType = 'Google_Service_Dataflow_Job';
-  protected $jobDataType = '';
+  public $count;
+  public $log;
 
-  public function setJob(Google_Service_Dataflow_Job $job)
+  public function setCount($count)
   {
-    $this->job = $job;
+    $this->count = $count;
   }
-  public function getJob()
+  public function getCount()
   {
-    return $this->job;
+    return $this->count;
+  }
+  public function setLog($log)
+  {
+    $this->log = $log;
+  }
+  public function getLog()
+  {
+    return $this->log;
   }
 }

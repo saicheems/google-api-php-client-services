@@ -15,17 +15,25 @@
  * the License.
  */
 
-class Google_Service_Dataflow_LaunchTemplateResponse extends Google_Model
+class Google_Service_Dataflow_Parameter extends Google_Model
 {
-  protected $jobType = 'Google_Service_Dataflow_Job';
-  protected $jobDataType = '';
+  public $key;
+  public $value;
 
-  public function setJob(Google_Service_Dataflow_Job $job)
+  public function setKey($key)
   {
-    $this->job = $job;
+    $this->key = $key;
   }
-  public function getJob()
+  public function getKey()
   {
-    return $this->job;
+    return $this->key;
+  }
+  public function setValue($value)
+  {
+    $this->value = $value;
+  }
+  public function getValue()
+  {
+    return $this->value;
   }
 }

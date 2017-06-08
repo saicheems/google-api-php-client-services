@@ -15,29 +15,29 @@
  * the License.
  */
 
-class Google_Service_Dataflow_TemplateMetadata extends Google_Collection
+class Google_Service_Dataflow_StructuredMessage extends Google_Collection
 {
   protected $collection_key = 'parameters';
-  public $description;
-  public $name;
-  protected $parametersType = 'Google_Service_Dataflow_ParameterMetadata';
+  public $messageKey;
+  public $messageText;
+  protected $parametersType = 'Google_Service_Dataflow_Parameter';
   protected $parametersDataType = 'array';
 
-  public function setDescription($description)
+  public function setMessageKey($messageKey)
   {
-    $this->description = $description;
+    $this->messageKey = $messageKey;
   }
-  public function getDescription()
+  public function getMessageKey()
   {
-    return $this->description;
+    return $this->messageKey;
   }
-  public function setName($name)
+  public function setMessageText($messageText)
   {
-    $this->name = $name;
+    $this->messageText = $messageText;
   }
-  public function getName()
+  public function getMessageText()
   {
-    return $this->name;
+    return $this->messageText;
   }
   public function setParameters($parameters)
   {
