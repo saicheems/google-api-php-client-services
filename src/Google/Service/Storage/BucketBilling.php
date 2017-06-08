@@ -15,19 +15,16 @@
  * the License.
  */
 
-class Google_Service_Storage_BucketEncryption extends Google_Model
+class Google_Service_Storage_BucketBilling extends Google_Model
 {
-  protected $internal_gapi_mappings = array(
-        "defaultKmsKeyName" => "default_kms_key_name",
-  );
-  public $defaultKmsKeyName;
+  public $requesterPays;
 
-  public function setDefaultKmsKeyName($defaultKmsKeyName)
+  public function setRequesterPays($requesterPays)
   {
-    $this->defaultKmsKeyName = $defaultKmsKeyName;
+    $this->requesterPays = $requesterPays;
   }
-  public function getDefaultKmsKeyName()
+  public function getRequesterPays()
   {
-    return $this->defaultKmsKeyName;
+    return $this->requesterPays;
   }
 }
