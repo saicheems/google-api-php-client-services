@@ -15,27 +15,26 @@
  * the License.
  */
 
-class Google_Service_Tracing_Module extends Google_Model
+class Google_Service_Tracing_Attributes extends Google_Model
 {
-  protected $buildIdType = 'Google_Service_Tracing_TruncatableString';
-  protected $buildIdDataType = '';
-  protected $moduleType = 'Google_Service_Tracing_TruncatableString';
-  protected $moduleDataType = '';
+  protected $attributeMapType = 'Google_Service_Tracing_AttributeValue';
+  protected $attributeMapDataType = 'map';
+  public $droppedAttributesCount;
 
-  public function setBuildId(Google_Service_Tracing_TruncatableString $buildId)
+  public function setAttributeMap($attributeMap)
   {
-    $this->buildId = $buildId;
+    $this->attributeMap = $attributeMap;
   }
-  public function getBuildId()
+  public function getAttributeMap()
   {
-    return $this->buildId;
+    return $this->attributeMap;
   }
-  public function setModule(Google_Service_Tracing_TruncatableString $module)
+  public function setDroppedAttributesCount($droppedAttributesCount)
   {
-    $this->module = $module;
+    $this->droppedAttributesCount = $droppedAttributesCount;
   }
-  public function getModule()
+  public function getDroppedAttributesCount()
   {
-    return $this->module;
+    return $this->droppedAttributesCount;
   }
 }

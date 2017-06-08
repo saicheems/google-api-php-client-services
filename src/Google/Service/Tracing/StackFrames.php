@@ -15,18 +15,27 @@
  * the License.
  */
 
-class Google_Service_Tracing_SpanUpdates extends Google_Collection
+class Google_Service_Tracing_StackFrames extends Google_Collection
 {
-  protected $collection_key = 'spans';
-  protected $spansType = 'Google_Service_Tracing_Span';
-  protected $spansDataType = 'array';
+  protected $collection_key = 'frame';
+  public $droppedFramesCount;
+  protected $frameType = 'Google_Service_Tracing_StackFrame';
+  protected $frameDataType = 'array';
 
-  public function setSpans($spans)
+  public function setDroppedFramesCount($droppedFramesCount)
   {
-    $this->spans = $spans;
+    $this->droppedFramesCount = $droppedFramesCount;
   }
-  public function getSpans()
+  public function getDroppedFramesCount()
   {
-    return $this->spans;
+    return $this->droppedFramesCount;
+  }
+  public function setFrame($frame)
+  {
+    $this->frame = $frame;
+  }
+  public function getFrame()
+  {
+    return $this->frame;
   }
 }

@@ -15,17 +15,25 @@
  * the License.
  */
 
-class Google_Service_Tracing_BatchUpdateSpansRequest extends Google_Model
+class Google_Service_Tracing_TruncatableString extends Google_Model
 {
-  protected $spanUpdatesType = 'Google_Service_Tracing_SpanUpdates';
-  protected $spanUpdatesDataType = 'map';
+  public $truncatedCharacterCount;
+  public $value;
 
-  public function setSpanUpdates($spanUpdates)
+  public function setTruncatedCharacterCount($truncatedCharacterCount)
   {
-    $this->spanUpdates = $spanUpdates;
+    $this->truncatedCharacterCount = $truncatedCharacterCount;
   }
-  public function getSpanUpdates()
+  public function getTruncatedCharacterCount()
   {
-    return $this->spanUpdates;
+    return $this->truncatedCharacterCount;
+  }
+  public function setValue($value)
+  {
+    $this->value = $value;
+  }
+  public function getValue()
+  {
+    return $this->value;
   }
 }

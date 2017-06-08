@@ -15,27 +15,18 @@
  * the License.
  */
 
-class Google_Service_Tracing_Module extends Google_Model
+class Google_Service_Tracing_BatchWriteSpansRequest extends Google_Collection
 {
-  protected $buildIdType = 'Google_Service_Tracing_TruncatableString';
-  protected $buildIdDataType = '';
-  protected $moduleType = 'Google_Service_Tracing_TruncatableString';
-  protected $moduleDataType = '';
+  protected $collection_key = 'spans';
+  protected $spansType = 'Google_Service_Tracing_Span';
+  protected $spansDataType = 'array';
 
-  public function setBuildId(Google_Service_Tracing_TruncatableString $buildId)
+  public function setSpans($spans)
   {
-    $this->buildId = $buildId;
+    $this->spans = $spans;
   }
-  public function getBuildId()
+  public function getSpans()
   {
-    return $this->buildId;
-  }
-  public function setModule(Google_Service_Tracing_TruncatableString $module)
-  {
-    $this->module = $module;
-  }
-  public function getModule()
-  {
-    return $this->module;
+    return $this->spans;
   }
 }
