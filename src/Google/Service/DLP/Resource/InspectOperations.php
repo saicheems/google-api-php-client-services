@@ -42,7 +42,7 @@ class Google_Service_DLP_Resource_InspectOperations extends Google_Service_Resou
     return $this->call('cancel', array($params), "Google_Service_DLP_DlpEmpty");
   }
   /**
-   * Schedule a job scanning content in a Google Cloud Platform data repository.
+   * Schedules a job scanning content in a Google Cloud Platform data repository.
    * (operations.create)
    *
    * @param Google_Service_DLP_CreateInspectOperationRequest $postBody
@@ -99,11 +99,11 @@ class Google_Service_DLP_Resource_InspectOperations extends Google_Service_Resou
    * @param string $name The name of the operation's parent resource.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filter This parameter supports filtering by done, ie
-   * done=true or done=false.
    * @opt_param string pageToken The list page token.
    * @opt_param int pageSize The list page size. The max allowed value is 256 and
    * default is 100.
+   * @opt_param string filter This parameter supports filtering by done, ie
+   * done=true or done=false.
    * @return Google_Service_DLP_ListOperationsResponse
    */
   public function listInspectOperations($name, $optParams = array())

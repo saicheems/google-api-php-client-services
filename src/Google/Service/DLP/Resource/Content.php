@@ -26,7 +26,7 @@
 class Google_Service_DLP_Resource_Content extends Google_Service_Resource
 {
   /**
-   * Find potentially sensitive info in a list of strings. This method has limits
+   * Finds potentially sensitive info in a list of strings. This method has limits
    * on input size, processing time, and output size. (content.inspect)
    *
    * @param Google_Service_DLP_InspectContentRequest $postBody
@@ -40,7 +40,7 @@ class Google_Service_DLP_Resource_Content extends Google_Service_Resource
     return $this->call('inspect', array($params), "Google_Service_DLP_InspectContentResponse");
   }
   /**
-   * Redact potentially sensitive info from a list of strings. This method has
+   * Redacts potentially sensitive info from a list of strings. This method has
    * limits on input size, processing time, and output size. (content.redact)
    *
    * @param Google_Service_DLP_RedactContentRequest $postBody

@@ -18,6 +18,8 @@
 class Google_Service_DLP_RedactContentRequest extends Google_Collection
 {
   protected $collection_key = 'replaceConfigs';
+  protected $imageRedactionConfigsType = 'Google_Service_DLP_ImageRedactionConfig';
+  protected $imageRedactionConfigsDataType = 'array';
   protected $inspectConfigType = 'Google_Service_DLP_InspectConfig';
   protected $inspectConfigDataType = '';
   protected $itemsType = 'Google_Service_DLP_ContentItem';
@@ -25,6 +27,14 @@ class Google_Service_DLP_RedactContentRequest extends Google_Collection
   protected $replaceConfigsType = 'Google_Service_DLP_ReplaceConfig';
   protected $replaceConfigsDataType = 'array';
 
+  public function setImageRedactionConfigs($imageRedactionConfigs)
+  {
+    $this->imageRedactionConfigs = $imageRedactionConfigs;
+  }
+  public function getImageRedactionConfigs()
+  {
+    return $this->imageRedactionConfigs;
+  }
   public function setInspectConfig(Google_Service_DLP_InspectConfig $inspectConfig)
   {
     $this->inspectConfig = $inspectConfig;
