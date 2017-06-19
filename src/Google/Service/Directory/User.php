@@ -40,6 +40,7 @@ class Google_Service_Directory_User extends Google_Collection
   public $isEnrolledIn2Sv;
   public $isMailboxSetup;
   public $kind;
+  public $languages;
   public $lastLoginTime;
   public $locations;
   protected $nameType = 'Google_Service_Directory_UserName';
@@ -235,6 +236,14 @@ class Google_Service_Directory_User extends Google_Collection
   public function getKind()
   {
     return $this->kind;
+  }
+  public function setLanguages($languages)
+  {
+    $this->languages = $languages;
+  }
+  public function getLanguages()
+  {
+    return $this->languages;
   }
   public function setLastLoginTime($lastLoginTime)
   {
