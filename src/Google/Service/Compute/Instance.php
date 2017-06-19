@@ -24,6 +24,8 @@ class Google_Service_Compute_Instance extends Google_Collection
   public $description;
   protected $disksType = 'Google_Service_Compute_AttachedDisk';
   protected $disksDataType = 'array';
+  protected $guestAcceleratorsType = 'Google_Service_Compute_AcceleratorConfig';
+  protected $guestAcceleratorsDataType = 'array';
   public $id;
   public $kind;
   public $labelFingerprint;
@@ -85,6 +87,14 @@ class Google_Service_Compute_Instance extends Google_Collection
   public function getDisks()
   {
     return $this->disks;
+  }
+  public function setGuestAccelerators($guestAccelerators)
+  {
+    $this->guestAccelerators = $guestAccelerators;
+  }
+  public function getGuestAccelerators()
+  {
+    return $this->guestAccelerators;
   }
   public function setId($id)
   {

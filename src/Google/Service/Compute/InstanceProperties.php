@@ -22,6 +22,8 @@ class Google_Service_Compute_InstanceProperties extends Google_Collection
   public $description;
   protected $disksType = 'Google_Service_Compute_AttachedDisk';
   protected $disksDataType = 'array';
+  protected $guestAcceleratorsType = 'Google_Service_Compute_AcceleratorConfig';
+  protected $guestAcceleratorsDataType = 'array';
   public $labels;
   public $machineType;
   protected $metadataType = 'Google_Service_Compute_Metadata';
@@ -58,6 +60,14 @@ class Google_Service_Compute_InstanceProperties extends Google_Collection
   public function getDisks()
   {
     return $this->disks;
+  }
+  public function setGuestAccelerators($guestAccelerators)
+  {
+    $this->guestAccelerators = $guestAccelerators;
+  }
+  public function getGuestAccelerators()
+  {
+    return $this->guestAccelerators;
   }
   public function setLabels($labels)
   {

@@ -15,32 +15,24 @@
  * the License.
  */
 
-class Google_Service_Compute_Autoscaler extends Google_Collection
+class Google_Service_Compute_Commitment extends Google_Collection
 {
-  protected $collection_key = 'statusDetails';
-  protected $autoscalingPolicyType = 'Google_Service_Compute_AutoscalingPolicy';
-  protected $autoscalingPolicyDataType = '';
+  protected $collection_key = 'resources';
   public $creationTimestamp;
   public $description;
+  public $endTimestamp;
   public $id;
   public $kind;
   public $name;
+  public $plan;
   public $region;
+  protected $resourcesType = 'Google_Service_Compute_ResourceCommitment';
+  protected $resourcesDataType = 'array';
   public $selfLink;
+  public $startTimestamp;
   public $status;
-  protected $statusDetailsType = 'Google_Service_Compute_AutoscalerStatusDetails';
-  protected $statusDetailsDataType = 'array';
-  public $target;
-  public $zone;
+  public $statusMessage;
 
-  public function setAutoscalingPolicy(Google_Service_Compute_AutoscalingPolicy $autoscalingPolicy)
-  {
-    $this->autoscalingPolicy = $autoscalingPolicy;
-  }
-  public function getAutoscalingPolicy()
-  {
-    return $this->autoscalingPolicy;
-  }
   public function setCreationTimestamp($creationTimestamp)
   {
     $this->creationTimestamp = $creationTimestamp;
@@ -56,6 +48,14 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   public function getDescription()
   {
     return $this->description;
+  }
+  public function setEndTimestamp($endTimestamp)
+  {
+    $this->endTimestamp = $endTimestamp;
+  }
+  public function getEndTimestamp()
+  {
+    return $this->endTimestamp;
   }
   public function setId($id)
   {
@@ -81,6 +81,14 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   {
     return $this->name;
   }
+  public function setPlan($plan)
+  {
+    $this->plan = $plan;
+  }
+  public function getPlan()
+  {
+    return $this->plan;
+  }
   public function setRegion($region)
   {
     $this->region = $region;
@@ -88,6 +96,14 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   public function getRegion()
   {
     return $this->region;
+  }
+  public function setResources($resources)
+  {
+    $this->resources = $resources;
+  }
+  public function getResources()
+  {
+    return $this->resources;
   }
   public function setSelfLink($selfLink)
   {
@@ -97,6 +113,14 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   {
     return $this->selfLink;
   }
+  public function setStartTimestamp($startTimestamp)
+  {
+    $this->startTimestamp = $startTimestamp;
+  }
+  public function getStartTimestamp()
+  {
+    return $this->startTimestamp;
+  }
   public function setStatus($status)
   {
     $this->status = $status;
@@ -105,28 +129,12 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   {
     return $this->status;
   }
-  public function setStatusDetails($statusDetails)
+  public function setStatusMessage($statusMessage)
   {
-    $this->statusDetails = $statusDetails;
+    $this->statusMessage = $statusMessage;
   }
-  public function getStatusDetails()
+  public function getStatusMessage()
   {
-    return $this->statusDetails;
-  }
-  public function setTarget($target)
-  {
-    $this->target = $target;
-  }
-  public function getTarget()
-  {
-    return $this->target;
-  }
-  public function setZone($zone)
-  {
-    $this->zone = $zone;
-  }
-  public function getZone()
-  {
-    return $this->zone;
+    return $this->statusMessage;
   }
 }

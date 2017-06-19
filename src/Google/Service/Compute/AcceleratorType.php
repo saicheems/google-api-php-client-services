@@ -15,32 +15,19 @@
  * the License.
  */
 
-class Google_Service_Compute_Autoscaler extends Google_Collection
+class Google_Service_Compute_AcceleratorType extends Google_Model
 {
-  protected $collection_key = 'statusDetails';
-  protected $autoscalingPolicyType = 'Google_Service_Compute_AutoscalingPolicy';
-  protected $autoscalingPolicyDataType = '';
   public $creationTimestamp;
+  protected $deprecatedType = 'Google_Service_Compute_DeprecationStatus';
+  protected $deprecatedDataType = '';
   public $description;
   public $id;
   public $kind;
+  public $maximumCardsPerInstance;
   public $name;
-  public $region;
   public $selfLink;
-  public $status;
-  protected $statusDetailsType = 'Google_Service_Compute_AutoscalerStatusDetails';
-  protected $statusDetailsDataType = 'array';
-  public $target;
   public $zone;
 
-  public function setAutoscalingPolicy(Google_Service_Compute_AutoscalingPolicy $autoscalingPolicy)
-  {
-    $this->autoscalingPolicy = $autoscalingPolicy;
-  }
-  public function getAutoscalingPolicy()
-  {
-    return $this->autoscalingPolicy;
-  }
   public function setCreationTimestamp($creationTimestamp)
   {
     $this->creationTimestamp = $creationTimestamp;
@@ -48,6 +35,14 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   public function getCreationTimestamp()
   {
     return $this->creationTimestamp;
+  }
+  public function setDeprecated(Google_Service_Compute_DeprecationStatus $deprecated)
+  {
+    $this->deprecated = $deprecated;
+  }
+  public function getDeprecated()
+  {
+    return $this->deprecated;
   }
   public function setDescription($description)
   {
@@ -73,6 +68,14 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   {
     return $this->kind;
   }
+  public function setMaximumCardsPerInstance($maximumCardsPerInstance)
+  {
+    $this->maximumCardsPerInstance = $maximumCardsPerInstance;
+  }
+  public function getMaximumCardsPerInstance()
+  {
+    return $this->maximumCardsPerInstance;
+  }
   public function setName($name)
   {
     $this->name = $name;
@@ -81,14 +84,6 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   {
     return $this->name;
   }
-  public function setRegion($region)
-  {
-    $this->region = $region;
-  }
-  public function getRegion()
-  {
-    return $this->region;
-  }
   public function setSelfLink($selfLink)
   {
     $this->selfLink = $selfLink;
@@ -96,30 +91,6 @@ class Google_Service_Compute_Autoscaler extends Google_Collection
   public function getSelfLink()
   {
     return $this->selfLink;
-  }
-  public function setStatus($status)
-  {
-    $this->status = $status;
-  }
-  public function getStatus()
-  {
-    return $this->status;
-  }
-  public function setStatusDetails($statusDetails)
-  {
-    $this->statusDetails = $statusDetails;
-  }
-  public function getStatusDetails()
-  {
-    return $this->statusDetails;
-  }
-  public function setTarget($target)
-  {
-    $this->target = $target;
-  }
-  public function getTarget()
-  {
-    return $this->target;
   }
   public function setZone($zone)
   {
