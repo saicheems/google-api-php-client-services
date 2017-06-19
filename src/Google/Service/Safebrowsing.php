@@ -70,11 +70,11 @@ class Google_Service_Safebrowsing extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'clientVersion' => array(
+                'clientId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'clientId' => array(
+                'clientVersion' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -98,11 +98,11 @@ class Google_Service_Safebrowsing extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'clientId' => array(
+                'clientVersion' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'clientVersion' => array(
+                'clientId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
