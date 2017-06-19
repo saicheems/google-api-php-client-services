@@ -33,12 +33,12 @@ class Google_Service_AdExchangeBuyerII_Resource_AccountsFilterSetsLosingBids ext
    * @param string $filterSetId The ID of the filter set to apply.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param int pageSize Requested page size. The server may return fewer than
+   * requested. If unspecified, the server will pick an appropriate default.
    * @opt_param string pageToken A token identifying a page of results the server
    * should return. Typically, this is the value of
    * ListLosingBidsResponse.nextPageToken returned from the previous call to the
    * accounts.filterSets.losingBids.list method.
-   * @opt_param int pageSize Requested page size. The server may return fewer than
-   * requested. If unspecified, the server will pick an appropriate default.
    * @return Google_Service_AdExchangeBuyerII_ListLosingBidsResponse
    */
   public function listAccountsFilterSetsLosingBids($accountId, $filterSetId, $optParams = array())
