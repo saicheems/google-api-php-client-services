@@ -27,17 +27,27 @@ class Google_Service_PeopleService_Resource_People extends Google_Service_Resour
 {
   /**
    * Provides information about a person by specifying a resource name. Use
-   * `people/me` to indicate the authenticated user. (people.get)
+   * `people/me` to indicate the authenticated user. The request throws a 400
+   * error if 'personFields' is not specified. (people.get)
    *
    * @param string $resourceName The resource name of the person to provide
    * information about.
    *
    * - To get information about the authenticated user, specify `people/me`. - To
-   * get information about any user, specify the resource name that   identifies
-   * the user, such as the resource names returned by
+   * get information about a google account, specify `people/`. - To get
+   * information about a contact, specify the resource name that   identifies the
+   * contact as returned by
    * [`people.connections.list`](/people/api/rest/v1/people.connections/list).
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string personFields Required. A field mask to restrict which
+   * fields on the person are returned. Valid values are:
+   *
+   * * addresses * ageRanges * biographies * birthdays * braggingRights *
+   * coverPhotos * emailAddresses * events * genders * imClients * interests *
+   * locales * memberships * metadata * names * nicknames * occupations *
+   * organizations * phoneNumbers * photos * relations * relationshipInterests *
+   * relationshipStatuses * residences * skills * taglines * urls
    * @opt_param string requestMask.includeField Required. Comma-separated list of
    * person fields to be included in the response. Each path should start with
    * `person.`: for example, `person.names` or `person.photos`.
@@ -52,10 +62,19 @@ class Google_Service_PeopleService_Resource_People extends Google_Service_Resour
   /**
    * Provides information about a list of specific people by specifying a list of
    * requested resource names. Use `people/me` to indicate the authenticated user.
+   * The request throws a 400 error if 'personFields' is not specified.
    * (people.getBatchGet)
    *
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string personFields Required. A field mask to restrict which
+   * fields on each person are returned. Valid values are:
+   *
+   * * addresses * ageRanges * biographies * birthdays * braggingRights *
+   * coverPhotos * emailAddresses * events * genders * imClients * interests *
+   * locales * memberships * metadata * names * nicknames * occupations *
+   * organizations * phoneNumbers * photos * relations * relationshipInterests *
+   * relationshipStatuses * residences * skills * taglines * urls
    * @opt_param string requestMask.includeField Required. Comma-separated list of
    * person fields to be included in the response. Each path should start with
    * `person.`: for example, `person.names` or `person.photos`.
