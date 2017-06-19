@@ -28,6 +28,7 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Version extends G
   protected $manualScalingDataType = '';
   public $name;
   public $runtimeVersion;
+  public $state;
 
   public function setAutomaticScaling(Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AutomaticScaling $automaticScaling)
   {
@@ -100,5 +101,13 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Version extends G
   public function getRuntimeVersion()
   {
     return $this->runtimeVersion;
+  }
+  public function setState($state)
+  {
+    $this->state = $state;
+  }
+  public function getState()
+  {
+    return $this->state;
   }
 }
