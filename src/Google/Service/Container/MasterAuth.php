@@ -18,6 +18,8 @@
 class Google_Service_Container_MasterAuth extends Google_Model
 {
   public $clientCertificate;
+  protected $clientCertificateConfigType = 'Google_Service_Container_ClientCertificateConfig';
+  protected $clientCertificateConfigDataType = '';
   public $clientKey;
   public $clusterCaCertificate;
   public $password;
@@ -30,6 +32,14 @@ class Google_Service_Container_MasterAuth extends Google_Model
   public function getClientCertificate()
   {
     return $this->clientCertificate;
+  }
+  public function setClientCertificateConfig(Google_Service_Container_ClientCertificateConfig $clientCertificateConfig)
+  {
+    $this->clientCertificateConfig = $clientCertificateConfig;
+  }
+  public function getClientCertificateConfig()
+  {
+    return $this->clientCertificateConfig;
   }
   public function setClientKey($clientKey)
   {

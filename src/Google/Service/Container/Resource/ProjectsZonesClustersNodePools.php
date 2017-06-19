@@ -136,4 +136,23 @@ class Google_Service_Container_Resource_ProjectsZonesClustersNodePools extends G
     $params = array_merge($params, $optParams);
     return $this->call('setManagement', array($params), "Google_Service_Container_Operation");
   }
+  /**
+   * Sets the size of a specific node pool. (nodePools.setSize)
+   *
+   * @param string $projectId The Google Developers Console [project ID or project
+   * number](https://support.google.com/cloud/answer/6158840).
+   * @param string $zone The name of the Google Compute Engine
+   * [zone](/compute/docs/zones#available) in which the cluster resides.
+   * @param string $clusterId The name of the cluster to update.
+   * @param string $nodePoolId The name of the node pool to update.
+   * @param Google_Service_Container_SetNodePoolSizeRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Container_Operation
+   */
+  public function setSize($projectId, $zone, $clusterId, $nodePoolId, Google_Service_Container_SetNodePoolSizeRequest $postBody, $optParams = array())
+  {
+    $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'nodePoolId' => $nodePoolId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('setSize', array($params), "Google_Service_Container_Operation");
+  }
 }
