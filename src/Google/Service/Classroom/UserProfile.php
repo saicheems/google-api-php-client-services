@@ -25,6 +25,7 @@ class Google_Service_Classroom_UserProfile extends Google_Collection
   protected $permissionsType = 'Google_Service_Classroom_GlobalPermission';
   protected $permissionsDataType = 'array';
   public $photoUrl;
+  public $verifiedTeacher;
 
   public function setEmailAddress($emailAddress)
   {
@@ -65,5 +66,13 @@ class Google_Service_Classroom_UserProfile extends Google_Collection
   public function getPhotoUrl()
   {
     return $this->photoUrl;
+  }
+  public function setVerifiedTeacher($verifiedTeacher)
+  {
+    $this->verifiedTeacher = $verifiedTeacher;
+  }
+  public function getVerifiedTeacher()
+  {
+    return $this->verifiedTeacher;
   }
 }

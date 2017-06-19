@@ -35,6 +35,7 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   public $maxPoints;
   protected $multipleChoiceQuestionType = 'Google_Service_Classroom_MultipleChoiceQuestion';
   protected $multipleChoiceQuestionDataType = '';
+  public $scheduledTime;
   public $state;
   public $submissionModificationMode;
   public $title;
@@ -136,6 +137,14 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   public function getMultipleChoiceQuestion()
   {
     return $this->multipleChoiceQuestion;
+  }
+  public function setScheduledTime($scheduledTime)
+  {
+    $this->scheduledTime = $scheduledTime;
+  }
+  public function getScheduledTime()
+  {
+    return $this->scheduledTime;
   }
   public function setState($state)
   {

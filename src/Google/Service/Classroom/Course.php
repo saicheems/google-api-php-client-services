@@ -19,6 +19,7 @@ class Google_Service_Classroom_Course extends Google_Collection
 {
   protected $collection_key = 'courseMaterialSets';
   public $alternateLink;
+  public $calendarId;
   public $courseGroupEmail;
   protected $courseMaterialSetsType = 'Google_Service_Classroom_CourseMaterialSet';
   protected $courseMaterialSetsDataType = 'array';
@@ -45,6 +46,14 @@ class Google_Service_Classroom_Course extends Google_Collection
   public function getAlternateLink()
   {
     return $this->alternateLink;
+  }
+  public function setCalendarId($calendarId)
+  {
+    $this->calendarId = $calendarId;
+  }
+  public function getCalendarId()
+  {
+    return $this->calendarId;
   }
   public function setCourseGroupEmail($courseGroupEmail)
   {
