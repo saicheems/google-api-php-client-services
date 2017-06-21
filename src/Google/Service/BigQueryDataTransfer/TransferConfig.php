@@ -19,6 +19,7 @@ class Google_Service_BigQueryDataTransfer_TransferConfig extends Google_Model
 {
   public $dataRefreshWindowDays;
   public $dataSourceId;
+  public $datasetRegion;
   public $destinationDatasetId;
   public $disabled;
   public $displayName;
@@ -28,6 +29,7 @@ class Google_Service_BigQueryDataTransfer_TransferConfig extends Google_Model
   public $schedule;
   public $status;
   public $updateTime;
+  public $userId;
 
   public function setDataRefreshWindowDays($dataRefreshWindowDays)
   {
@@ -44,6 +46,14 @@ class Google_Service_BigQueryDataTransfer_TransferConfig extends Google_Model
   public function getDataSourceId()
   {
     return $this->dataSourceId;
+  }
+  public function setDatasetRegion($datasetRegion)
+  {
+    $this->datasetRegion = $datasetRegion;
+  }
+  public function getDatasetRegion()
+  {
+    return $this->datasetRegion;
   }
   public function setDestinationDatasetId($destinationDatasetId)
   {
@@ -116,5 +126,13 @@ class Google_Service_BigQueryDataTransfer_TransferConfig extends Google_Model
   public function getUpdateTime()
   {
     return $this->updateTime;
+  }
+  public function setUserId($userId)
+  {
+    $this->userId = $userId;
+  }
+  public function getUserId()
+  {
+    return $this->userId;
   }
 }

@@ -18,6 +18,7 @@
 class Google_Service_BigQueryDataTransfer_TransferRun extends Google_Model
 {
   public $dataSourceId;
+  public $datasetRegion;
   public $destinationDatasetId;
   public $endTime;
   public $name;
@@ -28,6 +29,7 @@ class Google_Service_BigQueryDataTransfer_TransferRun extends Google_Model
   public $startTime;
   public $status;
   public $updateTime;
+  public $userId;
 
   public function setDataSourceId($dataSourceId)
   {
@@ -36,6 +38,14 @@ class Google_Service_BigQueryDataTransfer_TransferRun extends Google_Model
   public function getDataSourceId()
   {
     return $this->dataSourceId;
+  }
+  public function setDatasetRegion($datasetRegion)
+  {
+    $this->datasetRegion = $datasetRegion;
+  }
+  public function getDatasetRegion()
+  {
+    return $this->datasetRegion;
   }
   public function setDestinationDatasetId($destinationDatasetId)
   {
@@ -116,5 +126,13 @@ class Google_Service_BigQueryDataTransfer_TransferRun extends Google_Model
   public function getUpdateTime()
   {
     return $this->updateTime;
+  }
+  public function setUserId($userId)
+  {
+    $this->userId = $userId;
+  }
+  public function getUserId()
+  {
+    return $this->userId;
   }
 }
