@@ -84,6 +84,18 @@ class Google_Service_CloudTrace extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'startTime' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'orderBy' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -95,18 +107,6 @@ class Google_Service_CloudTrace extends Google_Service
                 'endTime' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-                'startTime' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),'listSpans' => array(
