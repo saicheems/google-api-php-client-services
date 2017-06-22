@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_CloudTrace_TruncatableString extends Google_Model
 {
-  public $name;
+  public $truncatedCharacterCount;
+  public $value;
 
-  public function setName($name)
+  public function setTruncatedCharacterCount($truncatedCharacterCount)
   {
-    $this->name = $name;
+    $this->truncatedCharacterCount = $truncatedCharacterCount;
   }
-  public function getName()
+  public function getTruncatedCharacterCount()
   {
-    return $this->name;
+    return $this->truncatedCharacterCount;
+  }
+  public function setValue($value)
+  {
+    $this->value = $value;
+  }
+  public function getValue()
+  {
+    return $this->value;
   }
 }

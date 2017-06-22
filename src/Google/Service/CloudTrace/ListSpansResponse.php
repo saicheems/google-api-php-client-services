@@ -15,16 +15,27 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_CloudTrace_ListSpansResponse extends Google_Collection
 {
-  public $name;
+  protected $collection_key = 'spans';
+  public $nextPageToken;
+  protected $spansType = 'Google_Service_CloudTrace_Span';
+  protected $spansDataType = 'array';
 
-  public function setName($name)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->name = $name;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getName()
+  public function getNextPageToken()
   {
-    return $this->name;
+    return $this->nextPageToken;
+  }
+  public function setSpans($spans)
+  {
+    $this->spans = $spans;
+  }
+  public function getSpans()
+  {
+    return $this->spans;
   }
 }

@@ -15,16 +15,26 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_CloudTrace_StackTrace extends Google_Model
 {
-  public $name;
+  protected $stackFramesType = 'Google_Service_CloudTrace_StackFrames';
+  protected $stackFramesDataType = '';
+  public $stackTraceHashId;
 
-  public function setName($name)
+  public function setStackFrames(Google_Service_CloudTrace_StackFrames $stackFrames)
   {
-    $this->name = $name;
+    $this->stackFrames = $stackFrames;
   }
-  public function getName()
+  public function getStackFrames()
   {
-    return $this->name;
+    return $this->stackFrames;
+  }
+  public function setStackTraceHashId($stackTraceHashId)
+  {
+    $this->stackTraceHashId = $stackTraceHashId;
+  }
+  public function getStackTraceHashId()
+  {
+    return $this->stackTraceHashId;
   }
 }

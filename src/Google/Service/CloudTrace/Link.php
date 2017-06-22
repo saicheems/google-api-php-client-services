@@ -15,16 +15,34 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_CloudTrace_Link extends Google_Model
 {
-  public $name;
+  public $spanId;
+  public $traceId;
+  public $type;
 
-  public function setName($name)
+  public function setSpanId($spanId)
   {
-    $this->name = $name;
+    $this->spanId = $spanId;
   }
-  public function getName()
+  public function getSpanId()
   {
-    return $this->name;
+    return $this->spanId;
+  }
+  public function setTraceId($traceId)
+  {
+    $this->traceId = $traceId;
+  }
+  public function getTraceId()
+  {
+    return $this->traceId;
+  }
+  public function setType($type)
+  {
+    $this->type = $type;
+  }
+  public function getType()
+  {
+    return $this->type;
   }
 }

@@ -15,16 +15,27 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_CloudTrace_StackFrames extends Google_Collection
 {
-  public $name;
+  protected $collection_key = 'frame';
+  public $droppedFramesCount;
+  protected $frameType = 'Google_Service_CloudTrace_StackFrame';
+  protected $frameDataType = 'array';
 
-  public function setName($name)
+  public function setDroppedFramesCount($droppedFramesCount)
   {
-    $this->name = $name;
+    $this->droppedFramesCount = $droppedFramesCount;
   }
-  public function getName()
+  public function getDroppedFramesCount()
   {
-    return $this->name;
+    return $this->droppedFramesCount;
+  }
+  public function setFrame($frame)
+  {
+    $this->frame = $frame;
+  }
+  public function getFrame()
+  {
+    return $this->frame;
   }
 }

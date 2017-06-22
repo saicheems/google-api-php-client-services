@@ -15,16 +15,26 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_CloudTrace_Attributes extends Google_Model
 {
-  public $name;
+  protected $attributeMapType = 'Google_Service_CloudTrace_AttributeValue';
+  protected $attributeMapDataType = 'map';
+  public $droppedAttributesCount;
 
-  public function setName($name)
+  public function setAttributeMap($attributeMap)
   {
-    $this->name = $name;
+    $this->attributeMap = $attributeMap;
   }
-  public function getName()
+  public function getAttributeMap()
   {
-    return $this->name;
+    return $this->attributeMap;
+  }
+  public function setDroppedAttributesCount($droppedAttributesCount)
+  {
+    $this->droppedAttributesCount = $droppedAttributesCount;
+  }
+  public function getDroppedAttributesCount()
+  {
+    return $this->droppedAttributesCount;
   }
 }

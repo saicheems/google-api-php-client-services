@@ -15,16 +15,27 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_CloudTrace_Links extends Google_Collection
 {
-  public $name;
+  protected $collection_key = 'link';
+  public $droppedLinksCount;
+  protected $linkType = 'Google_Service_CloudTrace_Link';
+  protected $linkDataType = 'array';
 
-  public function setName($name)
+  public function setDroppedLinksCount($droppedLinksCount)
   {
-    $this->name = $name;
+    $this->droppedLinksCount = $droppedLinksCount;
   }
-  public function getName()
+  public function getDroppedLinksCount()
   {
-    return $this->name;
+    return $this->droppedLinksCount;
+  }
+  public function setLink($link)
+  {
+    $this->link = $link;
+  }
+  public function getLink()
+  {
+    return $this->link;
   }
 }
