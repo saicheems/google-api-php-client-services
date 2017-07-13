@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright 2016 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -40,7 +40,9 @@ class Google_Service_Directory_User extends Google_Collection
   public $isEnrolledIn2Sv;
   public $isMailboxSetup;
   public $kind;
+  public $languages;
   public $lastLoginTime;
+  public $locations;
   protected $nameType = 'Google_Service_Directory_UserName';
   protected $nameDataType = '';
   public $nonEditableAliases;
@@ -235,6 +237,14 @@ class Google_Service_Directory_User extends Google_Collection
   {
     return $this->kind;
   }
+  public function setLanguages($languages)
+  {
+    $this->languages = $languages;
+  }
+  public function getLanguages()
+  {
+    return $this->languages;
+  }
   public function setLastLoginTime($lastLoginTime)
   {
     $this->lastLoginTime = $lastLoginTime;
@@ -243,10 +253,24 @@ class Google_Service_Directory_User extends Google_Collection
   {
     return $this->lastLoginTime;
   }
+  public function setLocations($locations)
+  {
+    $this->locations = $locations;
+  }
+  public function getLocations()
+  {
+    return $this->locations;
+  }
+  /**
+   * @param Google_Service_Directory_UserName
+   */
   public function setName(Google_Service_Directory_UserName $name)
   {
     $this->name = $name;
   }
+  /**
+   * @return Google_Service_Directory_UserName
+   */
   public function getName()
   {
     return $this->name;

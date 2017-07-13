@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright 2016 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -38,10 +38,16 @@ class Google_Service_FirebaseRules_Issue extends Google_Model
   {
     return $this->severity;
   }
+  /**
+   * @param Google_Service_FirebaseRules_SourcePosition
+   */
   public function setSourcePosition(Google_Service_FirebaseRules_SourcePosition $sourcePosition)
   {
     $this->sourcePosition = $sourcePosition;
   }
+  /**
+   * @return Google_Service_FirebaseRules_SourcePosition
+   */
   public function getSourcePosition()
   {
     return $this->sourcePosition;

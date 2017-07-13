@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright 2016 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -31,11 +31,9 @@
  */
 class Google_Service_CloudFunctions extends Google_Service
 {
-  /** View and manage your data across Google Cloud Platform services. */
-  const CLOUD_PLATFORM =
-      "https://www.googleapis.com/auth/cloud-platform";
 
-  public $projects_locations;
+
+
   
   /**
    * Constructs the internal representation of the CloudFunctions service.
@@ -50,25 +48,5 @@ class Google_Service_CloudFunctions extends Google_Service
     $this->version = 'v1';
     $this->serviceName = 'cloudfunctions';
 
-    $this->projects_locations = new Google_Service_CloudFunctions_Resource_ProjectsLocations(
-        $this,
-        $this->serviceName,
-        'locations',
-        array(
-          'methods' => array(
-            'get' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),
-          )
-        )
-    );
   }
 }

@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright 2016 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -21,10 +21,16 @@ class Google_Service_FirebaseRules_Source extends Google_Collection
   protected $filesType = 'Google_Service_FirebaseRules_FirebaserulesFile';
   protected $filesDataType = 'array';
 
+  /**
+   * @param Google_Service_FirebaseRules_FirebaserulesFile
+   */
   public function setFiles($files)
   {
     $this->files = $files;
   }
+  /**
+   * @return Google_Service_FirebaseRules_FirebaserulesFile
+   */
   public function getFiles()
   {
     return $this->files;

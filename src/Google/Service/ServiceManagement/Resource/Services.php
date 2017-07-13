@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright 2016 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -186,6 +186,8 @@ class Google_Service_ServiceManagement_Resource_Services extends Google_Service_
    *
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string pageToken Token identifying which result to start with;
+   * returned by a previous list call.
    * @opt_param int pageSize Requested size of the next page of data.
    * @opt_param string producerProjectId Include services produced by the
    * specified project.
@@ -194,8 +196,6 @@ class Google_Service_ServiceManagement_Resource_Services extends Google_Service_
    *
    * The Google Service Management implementation accepts the following forms: -
    * project:
-   * @opt_param string pageToken Token identifying which result to start with;
-   * returned by a previous list call.
    * @return Google_Service_ServiceManagement_ListServicesResponse
    */
   public function listServices($optParams = array())

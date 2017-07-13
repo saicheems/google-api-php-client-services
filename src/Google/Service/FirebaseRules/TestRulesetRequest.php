@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright 2016 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -19,13 +19,35 @@ class Google_Service_FirebaseRules_TestRulesetRequest extends Google_Model
 {
   protected $sourceType = 'Google_Service_FirebaseRules_Source';
   protected $sourceDataType = '';
+  protected $testSuiteType = 'Google_Service_FirebaseRules_TestSuite';
+  protected $testSuiteDataType = '';
 
+  /**
+   * @param Google_Service_FirebaseRules_Source
+   */
   public function setSource(Google_Service_FirebaseRules_Source $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_FirebaseRules_Source
+   */
   public function getSource()
   {
     return $this->source;
+  }
+  /**
+   * @param Google_Service_FirebaseRules_TestSuite
+   */
+  public function setTestSuite(Google_Service_FirebaseRules_TestSuite $testSuite)
+  {
+    $this->testSuite = $testSuite;
+  }
+  /**
+   * @return Google_Service_FirebaseRules_TestSuite
+   */
+  public function getTestSuite()
+  {
+    return $this->testSuite;
   }
 }

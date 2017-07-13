@@ -1,6 +1,6 @@
 <?php
 /*
- * Copyright 2016 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -123,12 +123,6 @@ class Google_Service_Classroom_Resource_Invitations extends Google_Service_Resou
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string courseId Restricts returned invitations to those for a
-   * course with the specified identifier.
-   * @opt_param int pageSize Maximum number of items to return. Zero means no
-   * maximum.
-   *
-   * The server may return fewer than the specified number of results.
    * @opt_param string userId Restricts returned invitations to those for a
    * specific user. The identifier can be one of the following:
    *
@@ -139,6 +133,12 @@ class Google_Service_Classroom_Resource_Invitations extends Google_Service_Resou
    *
    * The list request must be otherwise identical to the one that resulted in this
    * token.
+   * @opt_param int pageSize Maximum number of items to return. Zero means no
+   * maximum.
+   *
+   * The server may return fewer than the specified number of results.
+   * @opt_param string courseId Restricts returned invitations to those for a
+   * course with the specified identifier.
    * @return Google_Service_Classroom_ListInvitationsResponse
    */
   public function listInvitations($optParams = array())
