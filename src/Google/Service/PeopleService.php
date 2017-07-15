@@ -132,10 +132,6 @@ class Google_Service_PeopleService extends Google_Service
               'path' => 'v1/contactGroups',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'syncToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -143,6 +139,10 @@ class Google_Service_PeopleService extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),'update' => array(
@@ -273,14 +273,6 @@ class Google_Service_PeopleService extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'requestMask.includeField' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'syncToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -298,6 +290,14 @@ class Google_Service_PeopleService extends Google_Service
                   'type' => 'boolean',
                 ),
                 'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'requestMask.includeField' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
